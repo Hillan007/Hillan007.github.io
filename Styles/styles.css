@@ -8,8 +8,8 @@
 }
 
 .circle-image {
-    width: 150px; /* Adjust size as needed */
-    height: 150px; /* Ensure it's a square */
+    width: 150px; /* Adjusts size as needed */
+    height: 150px; /* Ensures it's a square */
     border-radius: 50%; /* Makes the image a circle */
     margin-right: 20px; /* Adds spacing between the image and text */
     object-fit: cover; /* Ensures the image scales nicely */
@@ -41,7 +41,7 @@ header, nav, footer, section {
     color: #000000;
 }
 
-/* Center the logo and website name */
+/* Centers the logo and website name */
 .logo-container {
     display: flex;
     flex-direction: column;
@@ -58,8 +58,8 @@ header, nav, footer, section {
 }
 
 header h1 {
-    font-size: 2rem; /* Adjust the font size as needed */
-    color: #333; /* Adjust the color as needed */
+    font-size: 2rem; /* Adjusts the font size as needed */
+    color: #333; /* Adjusts the color as needed */
 }
 
 nav ul {
@@ -115,7 +115,7 @@ header.dark-mode, nav.dark-mode, footer.dark-mode, section.dark-mode {
     color: #ef1717;
 }
 
-/* Ensure links are visible in dark mode */
+/* Ensures links are visible in dark mode */
 a {
     color: #007bff;
 }
@@ -130,26 +130,11 @@ button {
     color: #ffffff;
 }
 
-body.dark-mode button {
-    background-color: #0056b3;
-    color: #ffffff;
-}
 
-.theme-toggle {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
-theme-toggle:hover {
-    background-color: #0056b3;
-}
+
+
+
 
 footer {
     text-align: center;
