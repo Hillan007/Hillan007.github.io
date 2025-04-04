@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vic's Portfolio</title>
+    <!-- External Stylesheets -->
     <link rel="stylesheet" href="/Styles/styles.css">
-     <!-- Font Awesome CDN -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-     <!-- Boxicons CDN -->
-     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <div class="logo-container">
-            <img src="/Images/logo.ico" alt="Logo" class="logo">
+            <img src="/Images/logo.ico" alt="Portfolio Logo" class="logo">
             <h1>Welcome to Vic's Portfolio</h1>
         </div>
-       
     </header>
 
+    <!-- Navigation Menu -->
     <nav>
         <ul>
             <li><a href="#about">About Me</a></li>
@@ -32,105 +31,114 @@
     </nav>
 
     <main>
+        <!-- About Section -->
         <section id="about">
             <div class="about-container">
-                <img src="/Images/cool pic ever.jpg" alt="About Me" class="circle-image">
-                <p>Hi, I'm <b>Victor Hillan Muthomi</b>.A Proud Kenyan from Meru County. I'm passionate about technology, coding, and solving meaningful problems. I thrive on creativity and innovation.
-                    <br><B>Am Currently a Second year student pursuing Software Engineering Degree at Murang'a University of Technology</B>
+                <img src="/Images/cool pic ever.jpg" alt="Victor Hillan Muthomi" class="circle-image">
+                <p>Hi, I'm <strong>Victor Hillan Muthomi</strong>. A Proud Kenyan from Meru County. I'm passionate about technology, coding, and solving meaningful problems. I thrive on creativity and innovation.
+                    <br><strong>Currently a Second year student pursuing Software Engineering Degree at Murang'a University of Technology</strong>
                 </p>
             </div>
-        
+        </section>
 
+        <!-- Skills Section -->
         <section id="skills">
             <h2>Programming Languages</h2>
             <ul>
-                <li><i>HTML</i></li>
-                <li><hr>CSS</li>
-                <li><hr>JavaScript</li>
-                <li><hr>Python</li>
-                <li><hr>PHP</li>
-                
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>PHP</li>
             </ul>
-            <h2>FrameWorks</h2>
+            
+            <h2>Frameworks & Tools</h2>
             <ul>
-                <li><i>Node.js</i></li>
-                <li><hr>MySQL</li>
-                
-                
+                <li>Node.js</li>
+                <li>MySQL</li>
             </ul>
-            <p>I have used VS Code as my editor and incorporated extensions such as Python(Microsoft),Prettier,Live Preview,Github Copilot,live server,intellisense and many more.</p>
+            <p>Development Environment: VS Code with extensions including Python, Prettier, Live Preview, GitHub Copilot, Live Server, and IntelliSense</p>
         </section>
 
+        <!-- Education Section -->
         <section id="education">
             <h2>Education</h2>
-            <p><b>1.Primary level--The Meru Primary School</b> located in Meru County Kenya. K.C.P.E(Kenya Certificate of Primary Education.)</p>
-            <p><b>2.High School Level--Meru School.</b>A Boys National School located in Meru County. K.C.S.E (Kenya Certificate of Secondary Education.)</p>
-            <p><b>3.Higher Education--Bachelor of Science in Software Engineering at Murang'a University of Technology</b><br>Am currently a Second year at the institution.</p>
-            <a href="/Vic's CV1.docx" download>Download My CV</a>
+            <div class="education-item">
+                <strong>Primary Education</strong>
+                <p>The Meru Primary School - Meru County, Kenya</p>
+                <p>Kenya Certificate of Primary Education (K.C.P.E)</p>
+            </div>
+            <div class="education-item">
+                <strong>Secondary Education</strong>
+                <p>Meru School (Boys National School) - Meru County, Kenya</p>
+                <p>Kenya Certificate of Secondary Education (K.C.S.E)</p>
+            </div>
+            <div class="education-item">
+                <strong>Higher Education</strong>
+                <p>Murang'a University of Technology</p>
+                <p>Bachelor of Science in Software Engineering (Current: Second Year)</p>
+            </div>
+            <a href="/Vic's CV1.docx" download class="cv-download">Download My CV</a>
         </section>
-        
 
-
-
+        <!-- Projects Section -->
         <section id="projects">
             <h2>Projects</h2>
             <p>Here are some of the projects I have tackled:</p>
             <ul>
-                <li><a href="https://github.com/Hillan007/test_repo/tree/main">Project "Unitrade"</a> - A web app that addresses issues of online advertising especially in a campus set up.Connects buyers to sellers and allows taking a look at products before purchasing.Deals also with Second hand products.</li>
-                
+                <li><a href="https://github.com/Hillan007/test_repo/tree/main">Project "Unitrade"</a> - A web app that addresses issues of online advertising especially in a campus set up. Connects buyers to sellers and allows taking a look at products before purchasing. Deals also with second-hand products.</li>
+            </ul>
+            <ul>
+                <li><a href="https://github.com/Hillan007/portfolio">Project "Vic's Portfolio"</a> - A Portfolio Website decribing me,my educational background,projects and skills. Also attached you will find my CV.</li>
             </ul>
         </section>
 
+        <!-- Interests Section -->
         <section id="interests">
             <h2>Interests</h2>
-            <p><b>I love exploring new technologies, engaging in coding challenges, and collaborating on innovative projects.</b><BR>when am not coding am cooking,hiking and even spending time with loved ones</p>
+            <p><strong>I love exploring new technologies, engaging in coding challenges, and collaborating on innovative projects.</strong><br>When I'm not coding, I'm cooking, hiking, and spending time with loved ones.</p>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Me through</h2>
-<section>
-    <p>Phone</p>
-    <i class="bx bx-phone bx-tada"></i> +254757148346 / +254737375963
-</section>
-<section>
-    <p>Email</p>
-    <i class="bx bxs-envelope bx-spin"></i> victorhillan007@gmail.com / sc21232332023@mut.ac.ke
-</section>
-<section>
-    <p>Location</p>
-    <i class="bx bx-location-plus bx-burst"></i> Meru county, Kenya
-</section>
-<section>
-    <h1>Contact Form</h1> 
-    
-      </form>
-    <a href="https://forms.gle/HuMKPtkhSiEpxHwu5" target="_blank" rel="noopener noreferrer">Click here to fill out the form</a>
-
-</section>
-
-
+            <section>
+                <p>Phone</p>
+                <i class="bx bx-phone bx-tada"></i> +254757148346 / +254737375963
+            </section>
+            <section>
+                <p>Email</p>
+                <i class="bx bxs-envelope bx-spin"></i> victorhillan007@gmail.com / sc21232332023@mut.ac.ke
+            </section>
+            <section>
+                <p>Location</p>
+                <i class="bx bx-location-plus bx-burst"></i> Meru County, Kenya
+            </section>
+            <section>
+                <h1>Contact Form</h1>
+                <!---Google Form Link--->
+                <p>If you have any questions or would like to get in touch, please fill out the form below:</p>
+                <a href="https://forms.gle/HuMKPtkhSiEpxHwu5" target="_blank" rel="noopener noreferrer">Click here to fill out the form</a>
+            </section>
+        </section>
     </main>
 
+    <!-- Footer Section -->
     <footer>
         <p>You can follow me on Social Media:</p>
-    <a href="https://www.facebook.com/profile.php?id=100088873130498" target="_blank">
-        <i class="bx bxl-facebook-circle"></i>
-    </a>
-    <a href="https://x.com/victorhillan007" target="_blank">
-        <i class="bx bxl-twitter bx-spin"></i>
-    </a>
-</a>
-<a href="https://github.com/Hillan007" target="_blank">
-    <i class="bx bxl-github bx-tada"></i>
-</a>
-    </a>
-    <a href=": www.linkedin.com/in/victor-muthomi-the-best" target="_blank">
-        <i class="bx bxl-linkedin-square"></i>
-    </a>
+        <a href="https://www.facebook.com/profile.php?id=100088873130498" target="_blank">
+            <i class="bx bxl-facebook-circle"></i>
+        </a>
+        <a href="https://x.com/victorhillan007" target="_blank">
+            <i class="bx bxl-twitter bx-spin"></i>
+        </a>
+        <a href="https://github.com/Hillan007" target="_blank">
+            <i class="bx bxl-github bx-tada"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/victor-muthomi-the-best" target="_blank">
+            <i class="bx bxl-linkedin-square"></i>
+        </a>
         <p>&copy; 2025 Vic's Portfolio. All rights reserved.</p>
     </footer>
-   
-    
-   
 </body>
 </html>
