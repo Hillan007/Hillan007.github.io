@@ -24,7 +24,7 @@ To run the project locally:
 Clone the repository  https://github.com/Hillan007/portfolio
 
 bash
-git clone https://github.com/yourusername/yourportfolio.git
+git clone  https://github.com/Hillan007/portfolio
 
 Open the Portfolio project.html file in a browser.
 
