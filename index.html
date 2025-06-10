@@ -3,36 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vic's Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/Images/logo.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Images/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" href="/Images/logo.ico"/>
+    <title>Victor Muthomi | Software Engineer</title>
+    <!-- Add GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Add Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- External Stylesheets -->
     <link rel="stylesheet" href="/Styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Add this in the head section -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <!-- Add these in the head section -->
+    <script src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta name="description" content="Victor Muthomi - Software Engineer & Web Developer Portfolio">
+    <meta property="og:title" content="Victor Muthomi | Software Engineer">
+    <meta property="og:description" content="Portfolio of Victor Muthomi - Software Engineer & Web Developer">
+    <meta property="og:image" content="/Images/favicon.png">
+    <meta property="og:type" content="website">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="logo-container">
-            <img src="/Images/logo.ico" alt="Portfolio Logo" class="logo">
-            <h1>Welcome to Vic's Portfolio</h1>
-        </div>
-    </header>
-
-    <!-- Add this after your header -->
-    <div class="loading-animation">
-        <div class="spinner"></div>
+    <!-- Add this after opening body tag -->
+    <div class="progress-container">
+        <div class="progress-bar"></div>
     </div>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Victor Muthomi">Victor Muthomi</h1>
+            <p class="typewriter">Software Engineer | Web Developer | AI Enthusiast | Innovation Explorer</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="primary-btn">View My Work</a>
+                <a href="#contact" class="secondary-btn">Let's Connect</a>
+            </div>
+        </div>
+    </section>
 
-    <!-- Navigation Menu -->
-    <nav>
+    <!-- Modern Navigation -->
+    <nav class="glass-nav">
         <ul>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Programming Languages</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects Done</a></li>
+            <li><a href="#skills">Tech Stack</a></li>
+            <li><a href="#statistics">Expertise</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#interests">Interests</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="theme-toggle">
+            <i class="bx bx-moon"></i>
+        </div>
     </nav>
 
     <main>
@@ -48,23 +74,56 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Programming Languages</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>PHP</li>
-            </ul>
-            
-            <h2>Frameworks & Tools</h2>
-            <ul>
-                <li>Node.js</li>
-                <li>MySQL</li>
-            </ul>
-            <p>Development Environment: VS Code with extensions including Python, Prettier, Live Preview, GitHub Copilot, Live Server, and IntelliSense</p>
+        <!-- Skills Section with Modern Cards -->
+        <section id="skills" class="skills-section">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="skills-grid">
+                <!-- Frontend Stack -->
+                <div class="skill-card" data-aos="fade-up">
+                    <i class='bx bxl-html5'></i>
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li><i class='bx bxl-html5'></i> HTML5</li>
+                        <li><i class='bx bxl-css3'></i> CSS3/SASS</li>
+                        <li><i class='bx bxl-javascript'></i> JavaScript</li>
+                        <li><i class='bx bxl-react'></i> React</li>
+                    </ul>
+                </div>
+
+                <!-- Backend Stack -->
+                <div class="skill-card" data-aos="fade-up">
+                    <i class='bx bxl-nodejs'></i>
+                    <h3>Backend</h3>
+                    <ul>
+                        <li><i class='bx bxl-nodejs'></i> Node.js</li>
+                        <li><i class='bx bxl-python'></i> Python</li>
+                        <li><i class='bx bx-server'></i> Express.js</li>
+                        <li><i class='bx bxl-php'></i> PHP</li>
+                    </ul>
+                </div>
+
+                <!-- Database Stack -->
+                <div class="skill-card" data-aos="fade-up">
+                    <i class='bx bx-data'></i>
+                    <h3>Database</h3>
+                    <ul>
+                        <li><i class='bx bxs-data'></i> MongoDB</li>
+                        <li><i class='bx bxs-data'></i> MySQL</li>
+                    </ul>
+                </div>
+
+                <!-- Tools Stack -->
+                <div class="skill-card" data-aos="fade-up">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Tools & Others</h3>
+                    <ul>
+                        <li><i class='bx bxl-git'></i> Git</li>
+                        <li><i class='bx bxl-github'></i> GitHub</li>
+                        <li><i class='bx bx-terminal'></i> Command Line</li>
+                        <li><i class='bx bx-code-block'></i> VS Code</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <!-- Education Section -->
@@ -96,16 +155,34 @@
             <a href="/Victor CV.docx" download class="cv-download">Download My CV</a>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Here are some of the projects I have skillfully handled:</p>
-            <ul>
-                <li><a href="https://unitradeproject.netlify.app/">Project "Unitrade"</a> - A web app that addresses issues of online advertising especially in a campus set up. Connects buyers to sellers and allows taking a look at products before purchasing. Deals also with second-hand products.</li>
-            </ul>
-            <ul>
-                <li><a href="https://github.com/Hillan007/Hillan007.github.io">Project "Vic's Portfolio"</a> - A Portfolio Website decribing me,my educational background,projects and skills. Also attached you will find my CV.</li>
-            </ul>
+        <!-- Projects Section with 3D Cards -->
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <img src="/Images/Unitrade.png" alt="Unitrade Project">
+                        <h3>Unitrade</h3>
+                        <p>Campus marketplace platform</p>
+                        <div class="project-tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="project-btn demo-btn">
+                                <i class='bx bx-link-external'></i>
+                                <a href="https://unitradeproject.netlify.app/">Live Demo</a>
+                            </button>
+                            <button class="project-btn code-btn">
+                                <i class='bx bxl-github'></i>
+                                <a href="https://github.com/Hillan007/UniTrade.io-">View Code</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project cards -->
+            </div>
         </section>
 
         <!-- Interests Section -->
@@ -116,25 +193,77 @@
 
         <!-- Contact Section -->
         <section id="contact">
-            <h2>Contact Me through</h2>
-            <section>
-                <p>Phone</p>
-                <i class="bx bx-phone bx-tada"></i> +254757148346 / +254737375963
-            </section>
-            <section>
-                <p>Email</p>
-                <i class="bx bxs-envelope bx-spin"></i> victorhillan007@gmail.com / sc21232332023@mut.ac.ke
-            </section>
-            <section>
-                <p>Location</p>
-                <i class="bx bx-location-plus bx-burst"></i> Meru County, Kenya
-            </section>
-            <section>
-                <h1>Contact Form</h1>
-                <!---Google Form Link--->
-                <p>If you have any questions or would like to get in touch, please fill out the form below:</p>
-                <a href="https://forms.gle/HuMKPtkhSiEpxHwu5" target="_blank" rel="noopener noreferrer">Click here to fill out the form</a>
-            </section>
+            <h2 class="section-title">Contact Me through</h2>
+            <div class="contact-grid">
+                <!-- Phone Contact Card -->
+                <div class="contact-card" data-tilt data-tilt-max="10">
+                    <i class="bx bx-phone bx-tada"></i>
+                    <h3>Phone</h3>
+                    <p>+254757148346</p>
+                    <p>+254737375963</p>
+                </div>
+
+                <!-- Email Contact Card -->
+                <div class="contact-card" data-tilt data-tilt-max="10">
+                    <i class="bx bxs-envelope bx-spin"></i>
+                    <h3>Email</h3>
+                    <p>victorhillan007@gmail.com</p>
+                    <p>sc21232332023@mut.ac.ke</p>
+                </div>
+
+                <!-- Location Contact Card -->
+                <div class="contact-card" data-tilt data-tilt-max="10">
+                    <i class="bx bx-location-plus bx-burst"></i>
+                    <h3>Location</h3>
+                    <p>Meru County, Kenya</p>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="contact-card" data-tilt data-tilt-max="10">
+                    <i class="bx bx-message-square-detail"></i>
+                    <h3>Contact Form</h3>
+                    <p>Have questions? Get in touch!</p>
+                    <a href="https://forms.gle/HuMKPtkhSiEpxHwu5" target="_blank" rel="noopener noreferrer" class="contact-btn">Fill out the form</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section id="statistics" class="statistics-section">
+            <h2 class="section-title">Expertise & Impact</h2>
+            <div class="stats-grid">
+                <!-- Programming Language Expertise -->
+                <div class="stats-container" data-aos="fade-up">
+                    <div class="expertise-item">
+                        <div class="circular-progress" data-percentage="85">
+                            <span class="progress-value">0%</span>
+                        </div>
+                        <h3>HTML/CSS</h3>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="circular-progress" data-percentage="75">
+                            <span class="progress-value">0%</span>
+                        </div>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="circular-progress" data-percentage="80">
+                            <span class="progress-value">0%</span>
+                        </div>
+                        <h3>Python</h3>
+                    </div>
+                </div>
+
+                <!-- Client Satisfaction Counter -->
+                <div class="client-stats" data-aos="fade-up">
+                    <div class="counter-container">
+                        <i class='bx bx-smile'></i>
+                        <div class="counter" data-target="3">0</div>
+                        <h3>Satisfied Clients</h3>
+                        <p>and counting...</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -153,7 +282,7 @@
         <a href="https://www.linkedin.com/in/victor-muthomi-the-best" target="_blank">
             <i class="bx bxl-linkedin-square"></i>
         </a>
-        <p>&copy; 2025 Vic's Portfolio. All rights reserved.</p>
+        <p>&copy; 2025 Victor Hillan Muthomi. All rights reserved.</p>
     </footer>
 
     <!-- Add this before closing body tag -->
