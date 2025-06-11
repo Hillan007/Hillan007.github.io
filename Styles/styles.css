@@ -29,6 +29,36 @@ body {
     color: var(--text-color);
 }
 
+/* Prevent text selection and copying */
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+}
+
+/* Optional: Prevent copying specific elements */
+.about-content, 
+.project-content, 
+.education-content,
+.interests-grid,
+.contact-grid {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Prevent right-click context menu */
+body {
+    -webkit-context-menu: none;
+    -moz-context-menu: none;
+    -ms-context-menu: none;
+    -o-context-menu: none;
+    context-menu: none;
+}
+
 /* Responsive images */
 img {
     max-width: 100%;
@@ -110,44 +140,101 @@ section {
     display: flex;
     align-items: center;
     max-width: 1200px;
-    margin: 4rem auto;
-    padding: 2rem;
-    gap: 4rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    gap: 2rem;
 }
 
 .circle-image-container {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 400px;  /* Increased from 300px */
+    height: 400px; /* Increased from 300px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .circle-image {
-    width: 200px;
-    height: 200px;
+    width: 220px;  /* Slightly increased */
+    height: 220px;
     border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 2;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: relative;
 }
 
 .rotating-text {
     position: absolute;
     width: 100%;
     height: 100%;
-    animation: rotate 30s linear infinite;
+    animation: rotate 20s linear infinite;
 }
 
-.text-circle {
+.rotating-text text {
+    fill: var(--secondary-color);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Adjust dot size and spacing */
+.rotating-text textPath {
+    word-spacing: 12px;
+}
+
+/* Make dots more visible */
+.rotating-text text tspan {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+svg {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Increased width */
+    height: 400px; /* Increased height */
+}
+
+/* Adjust text path and size */
+text {
+    fill: var(--secondary-color);
+    font-size: 16px; /* Increased font size */
+    letter-spacing: 3px; /* More spacing between letters */
+    font-weight: 600;
+}
+
+/* Update the path for a larger circle */
+#textPath {
+    d: M 50,50 m -45,0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0;
+}
+
+/* Make text more visible on mobile */
+@media screen and (max-width: 768px) {
+    .circle-image-container {
+        width: 280px;
+        height: 280px;
+    }
+
+    .circle-image {
+        width: 160px;
+        height: 160px;
+    }
+
+    svg {
+        width: 280px;
+        height: 280px;
+    }
+
+    text {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+}
+
+/* Optional: Add contrast with text shadow */
+.rotating-text text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .about-content {
@@ -166,13 +253,16 @@ section {
     .circle-image-container {
         width: 250px;
         height: 250px;
-        margin: 0 auto;
-        order: -1; /* This moves the image to the top on mobile */
     }
 
     .circle-image {
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
+    }
+
+    svg {
+        width: 250px;
+        height: 250px;
     }
 
     .about-content {

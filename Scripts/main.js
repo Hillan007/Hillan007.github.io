@@ -290,3 +290,18 @@ document.addEventListener('click', (e) => {
 navList.addEventListener('scroll touchmove', (e) => {
     e.preventDefault();
 });
+
+// Prevent right-click
+document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+// Prevent keyboard shortcuts for copy/paste
+document.addEventListener('keydown', (e) => {
+    if (
+        // Prevent Ctrl+C, Ctrl+X, Ctrl+V
+        (e.ctrlKey && (e.key === 'c' || e.key === 'x' || e.key === 'v')) ||
+        // Prevent Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C
+        (e.ctrlKey && e.shiftKey && (e.key === 'i' || e.key === 'j' || e.key === 'c'))
+    ) {
+        e.preventDefault();
+    }
+});
