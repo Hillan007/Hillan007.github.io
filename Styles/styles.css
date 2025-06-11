@@ -108,10 +108,60 @@ section {
 /* About section */
 .about-container {
     display: flex;
-    flex-direction: column;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
     align-items: center;
-    text-align: center;
-    gap: 1rem;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-greeting {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.highlight-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.key-points {
+    margin: 2rem 0;
+}
+
+.key-points p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.key-points i {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.key-points ul {
+    list-style: none;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.key-points li {
+    margin: 0.5rem 0;
+}
+
+.vision-text {
+    font-style: italic;
+    color: var(--secondary-color);
+    margin-top: 2rem;
 }
 
 .about-container p {
