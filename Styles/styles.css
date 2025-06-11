@@ -107,19 +107,19 @@ section {
 
 /* About section */
 .about-container {
-    position: relative;
-    max-width: 800px;
-    margin: 4rem auto;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 4rem auto;
     padding: 2rem;
+    gap: 4rem;
 }
 
 .circle-image-container {
+    flex: 0 0 300px;
     position: relative;
     width: 300px;
     height: 300px;
-    margin: 0 auto;
 }
 
 .circle-image {
@@ -149,6 +149,12 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.about-content {
+    flex: 1;
+    text-align: left;
+    margin-top: 0;
 }
 
 .about-content {
