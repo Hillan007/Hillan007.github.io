@@ -116,7 +116,6 @@ section {
 }
 
 .circle-image-container {
-    flex: 0 0 300px;
     position: relative;
     width: 300px;
     height: 300px;
@@ -153,13 +152,47 @@ section {
 
 .about-content {
     flex: 1;
-    text-align: left;
-    margin-top: 0;
 }
 
-.about-content {
-    text-align: center;
-    margin-top: 2rem;
+/* Mobile responsive fixes */
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .circle-image-container {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+        order: -1; /* This moves the image to the top on mobile */
+    }
+
+    .circle-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-content {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .about-greeting {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .highlight-text {
+        font-size: 1rem;
+    }
+
+    .rotating-text {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @keyframes rotate {
