@@ -266,31 +266,27 @@ const menuBtn = document.querySelector('.menu-btn');
 const navList = document.querySelector('.glass-nav ul');
 const body = document.body;
 
-menuBtn.addEventListener('click', () => {
+// Toggle menu
+menuBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
     navList.classList.toggle('show');
-    body.classList.toggle('menu-open');
 });
 
 // Close menu when clicking a link
 document.querySelectorAll('.glass-nav a').forEach(link => {
     link.addEventListener('click', () => {
         navList.classList.remove('show');
-        body.classList.remove('menu-open');
     });
 });
 
 // Close menu when clicking outside
 document.addEventListener('click', (e) => {
-    if (!e.target.closest('.glass-nav') && !e.target.closest('.menu-btn')) {
+    if (!e.target.closest('.glass-nav')) {
         navList.classList.remove('show');
-        body.classList.remove('menu-open');
     }
 });
 
-// Disable animations on mobile for better performance
-if (window.innerWidth < 768) {
-    const tiltElements = document.querySelectorAll('[data-tilt]');
-    tiltElements.forEach(element => {
-        element.removeAttribute('data-tilt');
-    });
-}
+// Prevent scrolling when menu is open
+navList.addEventListener('scroll touchmove', (e) => {
+    e.preventDefault();
+});
