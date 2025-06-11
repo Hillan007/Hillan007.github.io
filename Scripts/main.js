@@ -261,26 +261,30 @@ const counterAnimation = setInterval(() => {
     }
 }, 200);
 
-// Mobile Menu Toggle
+// Mobile Menu Handler
 const menuBtn = document.querySelector('.menu-btn');
 const navList = document.querySelector('.glass-nav ul');
+const body = document.body;
 
 menuBtn.addEventListener('click', () => {
     navList.classList.toggle('show');
-});
-
-// Close menu when clicking outside
-document.addEventListener('click', (e) => {
-    if (!e.target.closest('.glass-nav')) {
-        navList.classList.remove('show');
-    }
+    body.classList.toggle('menu-open');
 });
 
 // Close menu when clicking a link
 document.querySelectorAll('.glass-nav a').forEach(link => {
     link.addEventListener('click', () => {
         navList.classList.remove('show');
+        body.classList.remove('menu-open');
     });
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('.glass-nav') && !e.target.closest('.menu-btn')) {
+        navList.classList.remove('show');
+        body.classList.remove('menu-open');
+    }
 });
 
 // Disable animations on mobile for better performance
