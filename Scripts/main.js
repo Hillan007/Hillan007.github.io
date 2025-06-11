@@ -212,26 +212,40 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Expertise Progress Animation
-const circularProgress = document.querySelectorAll('.circular-progress');
-const progressValue = document.querySelectorAll('.progress-value');
-
-circularProgress.forEach((progress, index) => {
-    const targetPercentage = progress.getAttribute('data-percentage');
-    let currentValue = 0;
+function initCircularProgress() {
+    const circles = document.querySelectorAll('.circular-progress');
     
-    const progressAnimation = setInterval(() => {
-        if (currentValue >= targetPercentage) {
-            clearInterval(progressAnimation);
-        } else {
-            currentValue++;
-            progressValue[index].textContent = `${currentValue}%`;
-            progress.style.background = `conic-gradient(
-                var(--secondary-color) ${currentValue * 3.6}deg,
-                #ededed ${currentValue * 3.6}deg
-            )`;
-        }
-    }, 20);
-});
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const circle = entry.target;
+                const targetPercentage = circle.getAttribute('data-percentage');
+                const progressValue = circle.querySelector('.progress-value');
+                let currentValue = 0;
+
+                const progressAnimation = setInterval(() => {
+                    if (currentValue >= targetPercentage) {
+                        clearInterval(progressAnimation);
+                    } else {
+                        currentValue++;
+                        progressValue.textContent = `${currentValue}%`;
+                        circle.style.background = `conic-gradient(
+                            var(--secondary-color) ${currentValue * 3.6}deg,
+                            #ededed ${currentValue * 3.6}deg
+                        )`;
+                    }
+                }, 20);
+
+                observer.unobserve(circle);
+            }
+        });
+    });
+
+    circles.forEach(circle => observer.observe(circle));
+}
+
+// Call the function when the document is loaded
+document.addEventListener('DOMContentLoaded', initCircularProgress);
 
 // Client Counter Animation
 const counter = document.querySelector('.counter');
@@ -246,3 +260,33 @@ const counterAnimation = setInterval(() => {
         counter.textContent = count + "+";
     }
 }, 200);
+
+// Mobile Menu Toggle
+const menuBtn = document.querySelector('.menu-btn');
+const navList = document.querySelector('.glass-nav ul');
+
+menuBtn.addEventListener('click', () => {
+    navList.classList.toggle('show');
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('.glass-nav')) {
+        navList.classList.remove('show');
+    }
+});
+
+// Close menu when clicking a link
+document.querySelectorAll('.glass-nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        navList.classList.remove('show');
+    });
+});
+
+// Disable animations on mobile for better performance
+if (window.innerWidth < 768) {
+    const tiltElements = document.querySelectorAll('[data-tilt]');
+    tiltElements.forEach(element => {
+        element.removeAttribute('data-tilt');
+    });
+}

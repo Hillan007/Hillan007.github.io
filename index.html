@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/Images/logo.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/Images/apple-touch-icon.png">
@@ -48,6 +48,9 @@
 
     <!-- Modern Navigation -->
     <nav class="glass-nav">
+        <button class="menu-btn">
+            <i class="bx bx-menu"></i>
+        </button>
         <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#skills">Tech Stack</a></li>
@@ -66,7 +69,7 @@
         <section id="about">
             <div class="about-container">
                 <img src="/Images/cool pic ever.jpg" alt="Victor Hillan Muthomi" class="circle-image">
-                <p>Hi, I'm <strong>Victor Hillan Muthomi</strong>. A software Engineering student from Meru County,Kenya.Driven by a fundamental belief: Technology can be a powerful force for community upliftment. My inspiration to delve into codin and software development stems directly from observing local challenges; be it in agriculture,education or local enterprise, and enviioning how targeted tech solutions could foster significant positive impact.
+                <p>Hi, I'm <strong>Victor Hillan Muthomi</strong>. A software Engineering student from Meru County, Kenya. Driven by a fundamental belief: Technology can be a powerful force for community upliftment. My inspiration to delve into coding and software development stems directly from observing local challenges; be it in agriculture,education or local enterprise, and envisioning how targeted tech solutions could foster significant positive impact.
                     <br><strong>Currently finished my Second year  at Murang'a University of Technology.</strong>
                 I am committed to mastering the skills to build this solutions. My passion lies not just in the elegance of code but in its practical application to solving meaningful problems,fostering innovations that empowers individuals and strengthen communities from the ground up.
                 I am eager to contribute to projects where creativity meets tangible community benefits.
@@ -121,38 +124,76 @@
                         <li><i class='bx bxl-github'></i> GitHub</li>
                         <li><i class='bx bx-terminal'></i> Command Line</li>
                         <li><i class='bx bx-code-block'></i> VS Code</li>
+                        <li><i class='bx bxl-figma'></i> Figma</li>  <!-- Added Figma with its icon -->
                     </ul>
                 </div>
             </div>
         </section>
 
         <!-- Education Section -->
-        <section id="education">
-            <h2>Education</h2>
-            <div class="education-item">
-                <strong>Primary Education</strong>
-                <p>The Meru Primary School - Meru County, Kenya</p>
-                <p>Kenya Certificate of Primary Education (K.C.P.E)</p>
+        <section id="education" class="education-section">
+            <h2 class="section-title" data-aos="fade-down">Education</h2>
+            <div class="education-timeline">
+                <div class="education-item" data-aos="fade-right">
+                    <div class="education-icon">
+                        <i class='bx bxs-graduation'></i>
+                    </div>
+                    <div class="education-content">
+                        <strong>Higher Education</strong>
+                        <h3>Muranga University of Technology</h3>
+                        <p>Bachelor of Science in Software Engineering</p>
+                        <p><i>Expected Graduation: 2027</i></p>
+                        <ul class="course-list">
+                            <li>Data Structures and Algorithms</li>
+                            <li>Database Management Systems</li>
+                            <li>Web Development</li>
+                            <li>Software Engineering Principles</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="education-item" data-aos="fade-left">
+                    <div class="education-icon">
+                        <i class='bx bxs-school'></i>
+                    </div>
+                    <div class="education-content">
+                        <strong>Secondary Education</strong>
+                        <h3>Meru School (Boys National School)</h3>
+                        <p>Kenya Certificate of Secondary Education (K.C.S.E)</p>
+                        <p>Meru County, Kenya</p>
+                    </div>
+                </div>
+
+                <div class="education-item" data-aos="fade-right">
+                    <div class="education-icon">
+                        <i class='bx bxs-book-reader'></i>
+                    </div>
+                    <div class="education-content">
+                        <strong>Primary Education</strong>
+                        <h3>The Meru Primary School</h3>
+                        <p>Kenya Certificate of Primary Education (K.C.P.E)</p>
+                        <p>Meru County, Kenya</p>
+                    </div>
+                </div>
+
+                <div class="education-item" data-aos="fade-left">
+                    <div class="education-icon">
+                        <i class='bx bx-code-block'></i>
+                    </div>
+                    <div class="education-content">
+                        <strong>Additional Training</strong>
+                        <h3>Power Learn Project Academy</h3>
+                        <p>Software Development Scholarship - February 2025 Cohort VII</p>
+                        <p>Full Stack Development Training</p>
+                        <p>Ai for Software Engineering Training</p>
+                    </div>
+                </div>
             </div>
-            <div class="education-item">
-                <strong>Secondary Education</strong>
-                <p>Meru School (Boys National School) - Meru County, Kenya</p>
-                <p>Kenya Certificate of Secondary Education (K.C.S.E)</p>
-            </div>
-            <div class="education-item">
-                <strong>Higher Education</strong>
-                <p>Muranga University of Technology</p>
-                <p>Currently a Second year student pursuing Bachelor of Science Degree in Software Engineering.</p>
-                <p><i>Expected Graduation: 2027</i></p>
-                <p>Relevant Courses: Data Structures and Algorithms, Database Management Systems, Web Development, Software Engineering Principles</p>
-            </div>
-            <div class="education-item">
-                <strong>Other Education</strong>
-                <p>Power Learn Project Academy</p>
-                <p>Currently doing the Software Development Scolarship February 2025 Cohort VII</p>
-                <p>Skills to be Acquired: HTML, CSS, JavaScript, Python, PHP, Node.js, MySQL</p>
-            </div>
-            <a href="/Victor CV.docx" download class="cv-download">Download My CV</a>
+            
+            <a href="/Victor CV.docx" download class="cv-download" data-aos="zoom-in">
+                <i class='bx bx-download'></i>
+                Download My CV
+            </a>
         </section>
 
         <!-- Projects Section with 3D Cards -->
@@ -186,9 +227,45 @@
         </section>
 
         <!-- Interests Section -->
-        <section id="interests">
-            <h2>Interests</h2>
-            <p><strong>I love exploring new technologies, engaging in coding challenges, and collaborating on innovative projects.</strong><br>When I'm not coding, I'm cooking, hiking, and spending time with loved ones.</p>
+        <section id="interests" class="interests-section">
+            <h2 class="section-title" data-aos="fade-down">Passions & Interests</h2>
+            <div class="interests-grid">
+                <div class="interest-card" data-aos="fade-up">
+                    <i class='bx bx-code-block'></i>
+                    <h3>Coding</h3>
+                    <p>Passionate about creating elegant solutions through code. Love participating in hackathons and coding challenges.</p>
+                </div>
+
+                <div class="interest-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class='bx bx-brain'></i>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Fascinated by the potential of AI to solve complex problems and create innovative solutions.</p>
+                </div>
+
+                <div class="interest-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class='bx bx-landscape'></i>
+                    <h3>Hiking</h3>
+                    <p>Enjoy exploring nature trails and conquering new peaks. Mt. Kenya is next on my list!</p>
+                </div>
+
+                <div class="interest-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class='bx bx-dish'></i>
+                    <h3>Cooking</h3>
+                    <p>Love experimenting with different cuisines and creating fusion dishes. Specialty in Kenyan traditional dishes.</p>
+                </div>
+
+                <div class="interest-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class='bx bx-book-reader'></i>
+                    <h3>Reading</h3>
+                    <p>Avid reader of tech blogs, sci-fi novels, and books on innovation and entrepreneurship.</p>
+                </div>
+
+                <div class="interest-card" data-aos="fade-up" data-aos-delay="500">
+                    <i class='bx bx-group'></i>
+                    <h3>Community</h3>
+                    <p>Committed to mentoring aspiring developers and contributing to tech communities.</p>
+                </div>
+            </div>
         </section>
 
         <!-- Contact Section -->
