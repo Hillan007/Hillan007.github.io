@@ -16,11 +16,7 @@ const Projects = () => {
       id: 1,
       title: "Unitrade",
       description: "Campus marketplace platform connecting students for buying and selling items within university communities.",
-<<<<<<< HEAD
-      image: "/Images/logo.png", // <-- also fix the path here (remove leading slash)
-=======
-      image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600",
->>>>>>> 01217dab9b50fc30416f703afe53e76ff51fc193
+      image: "/images/logo.png",
       technologies: ["React", "Node.js", "MongoDB", "Express.js"],
       category: "web",
       liveUrl: "https://unitradeproject.netlify.app/",
@@ -31,58 +27,26 @@ const Projects = () => {
       id: 2,
       title: "Portfolio Website",
       description: "Modern, responsive portfolio website showcasing my projects and skills with smooth animations.",
-<<<<<<< HEAD
-      image: "/Images/logo.ico",
+      image: "/images/logo.ico",
       technologies: ["React", "Tailwind CSS", "Framer Motion"],
       category: "web",
-      liveUrl: "https://hillan007.github.io/",
+      liveUrl: "https://vercel.com",
       githubUrl: "https://github.com/Hillan007/Hillan007.github.io",
-=======
-      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["React", "Tailwind CSS", "Framer Motion"],
-      category: "web",
-      liveUrl: "#",
-      githubUrl: "#",
->>>>>>> 01217dab9b50fc30416f703afe53e76ff51fc193
       featured: true
     },
     {
       id: 3,
-<<<<<<< HEAD
-      title: "Homework Ally",
-      description: "Homework Ally is an AI-powered web app that helps students tackle homework with confidence. Designed with a kid-friendly interface and built using FastAPI, OpenAI, and Supabase, it delivers instant answers from uploaded documents or typed questions. Safe, approachable, and always available, Homework Ally brings calm to after-school chaos — one assignment at a time.",
-      image: "/Images/homework ally.png",
-      technologies: ["Python", "Supabase", "FastAPI", "OpenAI","jinja2"],
+      title: "Homework ally",
+      description: "Digital solution for local farmers to track crops, manage inventory, and connect with buyers.",
+      image: "/images/homework ally.png",
+      technologies: ["Python", "fastapi", "OpenAi", "Supabase","jinja2"],
       category: "web",
       liveUrl: "https://homework-ally-2-0.vercel.app/",
       githubUrl: "https://github.com/Hillan007/Homework-ally-2.0",
       featured: false
-    }
-  ] // <-- Add this closing bracket here
-  
-=======
-      title: "Agricultural Management System",
-      description: "Digital solution for local farmers to track crops, manage inventory, and connect with buyers.",
-      image: "https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["Python", "Django", "PostgreSQL"],
-      category: "web",
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
     },
-    {
-      id: 4,
-      title: "Learning Management Platform",
-      description: "Educational platform designed to enhance learning experiences for students and educators.",
-      image: "https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["React", "Firebase", "Material-UI"],
-      category: "web",
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    }
+    
   ]
->>>>>>> 01217dab9b50fc30416f703afe53e76ff51fc193
 
   const categories = [
     { id: 'all', name: 'All Projects' },
