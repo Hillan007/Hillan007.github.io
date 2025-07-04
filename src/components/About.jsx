@@ -2,7 +2,10 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Code, Heart, Target } from 'lucide-react'
+<<<<<<< HEAD
 import profilePic from '../../public/images/cool pic ever.jpg';
+=======
+>>>>>>> 01217dab9b50fc30416f703afe53e76ff51fc193
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -76,9 +79,15 @@ const About = () => {
               {/* Profile Image */}
               <div className="absolute inset-4 rounded-full overflow-hidden bg-gradient-to-br from-primary-400 to-accent-400 p-1">
                 <img
+<<<<<<< HEAD
                   src={profilePic}
                   alt="Victor Muthomi"
                   className="w-full h-full object-cover rounded-full object-top"
+=======
+                  src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Victor Muthomi"
+                  className="w-full h-full object-cover rounded-full"
+>>>>>>> 01217dab9b50fc30416f703afe53e76ff51fc193
                 />
               </div>
               

@@ -40,3 +40,7 @@ export const ThemeProvider = ({ children }) => {
     </ThemeContext.Provider>
   )
 }
+<<<<<<< HEAD
+=======
+</boltContext>
+>>>>>>> 01217dab9b50fc30416f703afe53e76ff51fc193
