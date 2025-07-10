@@ -1,5 +1,5 @@
 # portfolio
-#Live Demo:https://hillan007.github.io/
+#Live Demo:https://vickiehillan.vercel.app/
                   
                   🌐 My Portfolio Website
      About
@@ -16,7 +16,7 @@ Frontend: HTML, CSS, Javascript
 
 
 
-Deployment: GitHub Pages
+Deployment: Vercel
 
 Installation & Usage
 
