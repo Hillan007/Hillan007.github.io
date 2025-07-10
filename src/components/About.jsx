@@ -3,6 +3,9 @@ import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Code, Heart, Target } from 'lucide-react'
 
+// Import profile image
+import victorImage from '../assets/images/victor.jpg'
+
 const About = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -75,7 +78,7 @@ const About = () => {
               {/* Profile Image */}
               <div className="absolute inset-4 rounded-full overflow-hidden bg-gradient-to-br from-primary-400 to-accent-400 p-1">
                 <img
-                  src="/images/victor.jpg"
+                  src={victorImage}
                   alt="Victor Muthomi"
                   className="w-full h-full object-cover object-top rounded-full"
                 />
