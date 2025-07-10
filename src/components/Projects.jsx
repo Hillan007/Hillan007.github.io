@@ -3,6 +3,11 @@ import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { ExternalLink, Github, Eye } from 'lucide-react'
 
+// Import images as modules
+import logoImage from '../assets/images/logo.png'
+import logoIcon from '../assets/images/logo.ico'
+import homeworkImage from '../assets/images/homework.png'
+
 const Projects = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -16,7 +21,7 @@ const Projects = () => {
       id: 1,
       title: "Unitrade",
       description: "Campus marketplace platform connecting students for buying and selling items within university communities.",
-      image: "/images/logo.png",
+      image: logoImage,
       technologies: ["React", "Node.js", "MongoDB", "Express.js"],
       category: "web",
       liveUrl: "https://unitradeproject.netlify.app/",
@@ -27,7 +32,7 @@ const Projects = () => {
       id: 2,
       title: "Portfolio Website",
       description: "Modern, responsive portfolio website showcasing my projects and skills with smooth animations.",
-      image: "/images/logo.ico",
+      image: logoIcon,
       technologies: ["React", "Tailwind CSS", "Framer Motion"],
       category: "web",
       liveUrl: "https://vickiehillan.vercel.app/",
@@ -38,7 +43,7 @@ const Projects = () => {
       id: 3,
       title: "Homework ally",
       description: "Digital solution for local farmers to track crops, manage inventory, and connect with buyers.",
-      image: "/images/homework.png",
+      image: homeworkImage,
       technologies: ["Python", "fastapi", "OpenAi", "Supabase","jinja2"],
       category: "web",
       liveUrl: "https://homework-ally-2-0.vercel.app/",
