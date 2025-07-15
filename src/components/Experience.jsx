@@ -179,8 +179,8 @@ const Experience = () => {
             className="text-center mt-16"
           >
             <motion.a
-              href="/Victor CV.docx"
-              download
+              href="Victor_CV.pdf"
+              download="Victor_CV.pdf"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-full hover:shadow-lg transition-all duration-300"
