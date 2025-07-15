@@ -92,8 +92,8 @@ const Hero = () => {
             
             {/* CV Download Button - FIXED */}
             <motion.a
-              href="victor_cv.pdf"
-              download="Victor_cv.pdf"
+              href="Victor_CV.pdf"
+              download="Victor_CV.pdf"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="btn-secondary inline-flex items-center gap-2"
