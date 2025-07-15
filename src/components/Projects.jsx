@@ -41,16 +41,26 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Homework ally",
-      description: "Digital solution for local farmers to track crops, manage inventory, and connect with buyers.",
+      title: "Homework Ally",
+      description: "Homework Ally is an AI-powered web app that helps students tackle homework with confidence. Designed with a kid-friendly interface and built using FastAPI, OpenAI, and Supabase.",
       image: homeworkImage,
-      technologies: ["Python", "fastapi", "OpenAi", "Supabase","jinja2"],
-      category: "web",
+      technologies: ["Python", "FastAPI", "OpenAI", "Supabase", "Jinja2"],
+      category: "ai",
       liveUrl: "https://homework-ally-2-0.vercel.app/",
       githubUrl: "https://github.com/Hillan007/Homework-ally-2.0",
       featured: false
     },
-    
+    {
+      id: 4,
+      title: "Moodly",
+      description: "AI-powered mood tracking and mental wellness application that analyzes user emotions and provides personalized recommendations for improved mental health.",
+      image: "images/moodly.png", 
+      technologies: ["Python", "Machine Learning", "TensorFlow", "Flask"],
+      category: "ai",
+      liveUrl: "https://moodly-2-0.vercel.app/", // Replace with your live URL when available
+      githubUrl: "https://github.com/Hillan007/Moodly-2.0", // Replace with your GitHub repo URL
+      featured: true
+    }
   ]
 
   const categories = [
