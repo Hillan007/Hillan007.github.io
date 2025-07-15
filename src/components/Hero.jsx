@@ -90,6 +90,18 @@ const Hero = () => {
               <ChevronDown size={20} />
             </motion.a>
             
+            {/* CV Download Button - NEW */}
+            <motion.a
+              href="/victor_cv.pdf"
+              download="Victor_Muthomi_CV.pdf"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="btn-secondary inline-flex items-center gap-2"
+            >
+              <Download size={20} />
+              Download CV
+            </motion.a>
+            
             <motion.a
               href="#contact"
               whileHover={{ scale: 1.05 }}
