@@ -7,6 +7,7 @@ import { ExternalLink, Github, Eye } from 'lucide-react'
 import logoImage from '../assets/images/logo.png'
 import logoIcon from '../assets/images/logo.ico'
 import homeworkImage from '../assets/images/homework.png'
+import moodlyImage from '../assets/images/moodly.png' // Add this line
 
 const Projects = () => {
   const [ref, inView] = useInView({
@@ -54,11 +55,11 @@ const Projects = () => {
       id: 4,
       title: "Moodly",
       description: "AI-powered mood tracking and mental wellness application that analyzes user emotions and provides personalized recommendations for improved mental health.",
-      image: "images/moodly.png", 
+      image: moodlyImage, // Change from "images/moodly.png" to moodlyImage
       technologies: ["Python", "Machine Learning", "TensorFlow", "Flask"],
       category: "ai",
-      liveUrl: "https://moodly-2-0.vercel.app/", // Replace with your live URL when available
-      githubUrl: "https://github.com/Hillan007/Moodly-2.0", // Replace with your GitHub repo URL
+      liveUrl: "https://moodly-2-0.vercel.app/",
+      githubUrl: "https://github.com/Hillan007/Moodly-2.0",
       featured: true
     }
   ]
