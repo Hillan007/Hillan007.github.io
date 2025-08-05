@@ -59,7 +59,7 @@ const Projects = () => {
       technologies: ["Python", "Machine Learning", "TensorFlow", "Flask"],
       category: "ai",
       liveUrl: "https://moodly-2-0.vercel.app/",
-      githubUrl: "https://github.com/Hillan007/Moodly-2.0",
+      githubUrl: "https://github.com/Hillan007/Moodly-2.0.1",
       featured: true
     }
   ]

@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { GraduationCap, Award, BookOpen, Code } from 'lucide-react'
+import { GraduationCap, Award, BookOpen, Code, Mail } from 'lucide-react'
 
 const Experience = () => {
   const [ref, inView] = useInView({
@@ -173,20 +173,19 @@ const Experience = () => {
             </div>
           </div>
 
-          {/* Download CV Button */}
+          {/* Request CV Button */}
           <motion.div
             variants={itemVariants}
             className="text-center mt-16"
           >
             <motion.a
-              href="Victor_CV.pdf"
-              download="Victor_CV.pdf"
+              href="mailto:victorhillan007@gmail.com?subject=CV Request&body=Hi Victor,%0D%0A%0D%0AI would love to view your CV. Could you please send it to me?%0D%0A%0D%0AThank you!"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-full hover:shadow-lg transition-all duration-300"
             >
-              <Award size={20} />
-              Download My CV
+              <Mail size={20} />
+              Request My CV
             </motion.a>
           </motion.div>
         </motion.div>
