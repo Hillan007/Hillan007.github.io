@@ -21,7 +21,7 @@ const Projects = () => {
     {
       id: 1,
       title: "Unitrade",
-      description: "Campus marketplace platform connecting students for buying and selling items within university communities.",
+      description: "Campus marketplace connecting students for seamless buying and selling within university communities.",
       image: logoImage,
       technologies: ["React", "Node.js", "MongoDB", "Express.js"],
       category: "web",
@@ -32,7 +32,7 @@ const Projects = () => {
     {
       id: 2,
       title: "Portfolio Website",
-      description: "Modern, responsive portfolio website showcasing my projects and skills with smooth animations.",
+      description: "Modern, responsive portfolio showcasing projects and skills with smooth animations and dark mode.",
       image: logoIcon,
       technologies: ["React", "Tailwind CSS", "Framer Motion"],
       category: "web",
@@ -43,7 +43,7 @@ const Projects = () => {
     {
       id: 3,
       title: "Homework Ally",
-      description: "Homework Ally is an AI-powered web app that helps students tackle homework with confidence. Designed with a kid-friendly interface and built using FastAPI, OpenAI, and Supabase.",
+      description: "AI-powered homework assistant with kid-friendly interface using OpenAI and Supabase for student support.",
       image: homeworkImage,
       technologies: ["Python", "FastAPI", "OpenAI", "Supabase", "Jinja2"],
       category: "ai",
@@ -54,7 +54,7 @@ const Projects = () => {
     {
       id: 4,
       title: "Moodly",
-      description: "AI-powered mood tracking and mental wellness application that analyzes user emotions and provides personalized recommendations for improved mental health. Features music recommendations based on your current mood via Spotify API integration.",
+      description: "AI mood tracker with personalized wellness recommendations and Spotify music suggestions based on emotions.",
       image: moodlyImage, // Change from "images/moodly.png" to moodlyImage
       technologies: ["Python", "Machine Learning", "TensorFlow", "Flask", "Spotify API"],
       category: "ai",
