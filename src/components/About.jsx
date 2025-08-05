@@ -165,12 +165,12 @@ const About = () => {
               className="grid grid-cols-3 gap-4 pt-6"
             >
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary-500">3+</div>
+                <div className="text-2xl font-bold text-primary-500">10+</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Projects</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary-500">2+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Years Learning</div>
+                <div className="text-2xl font-bold text-primary-500">3+</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Years of Experience</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-primary-500">100%</div>
