@@ -54,9 +54,9 @@ const Projects = () => {
     {
       id: 4,
       title: "Moodly",
-      description: "AI-powered mood tracking and mental wellness application that analyzes user emotions and provides personalized recommendations for improved mental health.",
+      description: "AI-powered mood tracking and mental wellness application that analyzes user emotions and provides personalized recommendations for improved mental health. Features music recommendations based on your current mood via Spotify API integration.",
       image: moodlyImage, // Change from "images/moodly.png" to moodlyImage
-      technologies: ["Python", "Machine Learning", "TensorFlow", "Flask"],
+      technologies: ["Python", "Machine Learning", "TensorFlow", "Flask", "Spotify API"],
       category: "ai",
       liveUrl: "https://moodly-2-0.vercel.app/",
       githubUrl: "https://github.com/Hillan007/Moodly-2.0.1",
