@@ -90,16 +90,15 @@ const Hero = () => {
               <ChevronDown size={20} />
             </motion.a>
             
-            {/* CV Download Button - FIXED */}
+            {/* CV Request Button - Email */}
             <motion.a
-              href="Victor_CV.pdf"
-              download="Victor_CV.pdf"
+              href="mailto:victorhillan007@gmail.com?subject=CV Request&body=Hi Victor,%0D%0A%0D%0AI would love to view your CV. Could you please send it to me?%0D%0A%0D%0AThank you!"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="btn-secondary inline-flex items-center gap-2"
             >
-              <Download size={20} />
-              Download CV
+              <Mail size={20} />
+              Request CV
             </motion.a>
             
             <motion.a
