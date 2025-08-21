@@ -1,0 +1,10 @@
+/* TEAM */
+Developer: Victor Muthomi
+Site: https://goldenchamp.vercel.app/
+Contact: victorhillan007@gmail.com
+
+/* SITE */
+Last update: 2025-08-21
+Standards: HTML5, CSS3, ESNext
+Components: React, Tailwind CSS, Vite
+Hosting: Vercel
