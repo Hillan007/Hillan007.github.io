@@ -1,6 +1,7 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { Heart, Code, Coffee } from 'lucide-react'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Heart, Code, Coffee } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -44,15 +45,22 @@ const Footer = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="space-y-2"
             >
-              {['About', 'Skills', 'Projects', 'Experience', 'Contact'].map((link) => (
-                <motion.a
-                  key={link}
-                  href={`#${link.toLowerCase()}`}
-                  whileHover={{ x: 5 }}
-                  className="block text-gray-300 hover:text-primary-400 transition-colors duration-200"
-                >
-                  {link}
-                </motion.a>
+              {[
+                { name: 'Home', to: '/' },
+                { name: 'About', to: '/about' },
+                { name: 'Projects', to: '/projects' },
+                { name: 'Blog', to: '/blog' },
+                { name: 'Contact', to: '/contact' },
+                { name: 'Extras', to: '/extras' },
+              ].map((link) => (
+                <motion.div key={link.name} whileHover={{ x: 5 }}>
+                  <Link
+                    to={link.to}
+                    className="block text-gray-300 hover:text-primary-400 transition-colors duration-200"
+                  >
+                    {link.name}
+                  </Link>
+                </motion.div>
               ))}
             </motion.div>
           </div>

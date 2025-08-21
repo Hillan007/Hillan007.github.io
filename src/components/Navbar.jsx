@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
-import { Menu, X, Sun, Moon } from 'lucide-react'
-import { useTheme } from '../contexts/ThemeContext'
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { Menu, X, Sun, Moon } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { useTheme } from '../contexts/ThemeContext';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -17,12 +18,13 @@ const Navbar = () => {
   }, [])
 
   const navItems = [
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Contact', href: '#contact' },
-  ]
+    { name: 'Home', to: '/' },
+    { name: 'About', to: '/about' },
+    { name: 'Projects', to: '/projects' },
+    { name: 'Blog', to: '/blog' },
+    { name: 'Contact', to: '/contact' },
+    { name: 'Extras', to: '/extras' },
+  ];
 
   return (
     <motion.nav
@@ -47,14 +49,14 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <motion.a
-                key={item.name}
-                href={item.href}
-                whileHover={{ y: -2 }}
-                className="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-200 font-medium"
-              >
-                {item.name}
-              </motion.a>
+              <motion.div key={item.name} whileHover={{ y: -2 }}>
+                <Link
+                  to={item.to}
+                  className="text-black dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-200 font-medium"
+                >
+                  {item.name}
+                </Link>
+              </motion.div>
             ))}
             
             {/* Theme Toggle */}
@@ -101,15 +103,15 @@ const Navbar = () => {
         >
           <div className="py-4 space-y-4">
             {navItems.map((item) => (
-              <motion.a
-                key={item.name}
-                href={item.href}
-                whileHover={{ x: 10 }}
-                onClick={() => setIsOpen(false)}
-                className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-200 font-medium"
-              >
-                {item.name}
-              </motion.a>
+              <motion.div key={item.name} whileHover={{ x: 10 }}>
+                <Link
+                  to={item.to}
+                  onClick={() => setIsOpen(false)}
+                  className="block px-4 py-2 text-black dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-200 font-medium"
+                >
+                  {item.name}
+                </Link>
+              </motion.div>
             ))}
           </div>
         </motion.div>

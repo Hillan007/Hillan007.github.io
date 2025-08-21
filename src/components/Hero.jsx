@@ -1,3 +1,5 @@
+import victorImg from '../assets/images/victor.jpg';
+import { Link } from 'react-router-dom';
 import React from 'react'
 import { motion } from 'framer-motion'
 import { ChevronDown, Download, Mail } from 'lucide-react'
@@ -36,101 +38,98 @@ const Hero = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="text-center"
+          className="flex flex-col md:flex-row items-center md:items-start md:text-left text-center"
         >
-          {/* Greeting */}
+          {/* Profile Picture on the left */}
           <motion.div
             variants={itemVariants}
-            className="mb-6"
+            className="flex-shrink-0 flex justify-center md:justify-start mb-6 md:mb-0 md:mr-10"
           >
-            <span className="inline-block px-4 py-2 bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 rounded-full text-sm font-medium">
-              👋 Hello, I'm
-            </span>
+            <img
+              src={victorImg}
+              alt="Victor Muthomi"
+              className="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover object-[center_30%] border-2 border-primary-500 shadow-lg"
+            />
           </motion.div>
 
-          {/* Name */}
-          <motion.h1
-            variants={itemVariants}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
-          >
-            <span className="text-gradient">Victor</span>
-            <br />
-            <span className="text-gray-800 dark:text-white">Muthomi</span>
-          </motion.h1>
-
-          {/* Animated Role */}
-          <motion.div
-            variants={itemVariants}
-            className="mb-8"
-          >
-            <AnimatedText />
-          </motion.div>
-
-          {/* Description */}
-          <motion.p
-            variants={itemVariants}
-            className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed"
-          >
-            A passionate Software Engineering student from Meru, Kenya, 
-            transforming local challenges into innovative tech solutions.
-          </motion.p>
-
-          {/* CTA Buttons */}
-          <motion.div
-            variants={itemVariants}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
-          >
-            <motion.a
-              href="#projects"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="btn-primary inline-flex items-center gap-2"
-            >
-              View My Work
-              <ChevronDown size={20} />
-            </motion.a>
-            
-            {/* CV Request Button - Email */}
-            <motion.a
-              href="https://mail.google.com/mail/u/0/?fs=1&to=victorhillan007@gmail.com&su=CV Request&body=Hi Victor,%0D%0A%0D%0AI would love to view your CV. Could you please send it to me?%0D%0A%0D%0AThank you!&tf=cm"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="btn-secondary inline-flex items-center gap-2"
-            >
-              <Mail size={20} />
-              Request CV
-            </motion.a>
-            
-            <motion.a
-              href="#contact"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="btn-secondary inline-flex items-center gap-2"
-            >
-              <Mail size={20} />
-              Let's Connect
-            </motion.a>
-          </motion.div>
-
-          {/* Scroll Indicator */}
-          <motion.div
-            variants={itemVariants}
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-          >
+          {/* Main Content on the right */}
+          <div className="flex-1">
+            {/* Greeting */}
             <motion.div
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-              className="w-6 h-10 border-2 border-gray-400 dark:border-gray-600 rounded-full flex justify-center"
+              variants={itemVariants}
+              className="mb-6"
             >
-              <motion.div
-                animate={{ y: [0, 12, 0] }}
-                transition={{ duration: 2, repeat: Infinity }}
-                className="w-1 h-3 bg-gray-400 dark:bg-gray-600 rounded-full mt-2"
-              />
+              <span className="inline-block px-4 py-2 bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 rounded-full text-sm font-medium">
+                👋 Hello, I'm
+              </span>
             </motion.div>
-          </motion.div>
+
+            {/* Name */}
+            <motion.h1
+              variants={itemVariants}
+              className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
+            >
+              <span className="text-gradient">Victor</span>
+              <br />
+              <span className="text-gray-800 dark:text-white">Muthomi</span>
+            </motion.h1>
+
+            {/* Animated Role */}
+            <motion.div
+              variants={itemVariants}
+              className="mb-8"
+            >
+              <AnimatedText />
+            </motion.div>
+
+            {/* Description */}
+            <motion.p
+              variants={itemVariants}
+              className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl leading-relaxed"
+            >
+              A passionate Software Engineering student from Meru, Kenya, 
+              transforming local challenges into innovative tech solutions.
+            </motion.p>
+
+            {/* CTA Buttons */}
+            <motion.div
+              variants={itemVariants}
+              className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center mb-16"
+            >
+              <motion.a
+                href="#projects"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="btn-primary inline-flex items-center gap-2"
+              >
+                View My Work
+                <ChevronDown size={20} />
+              </motion.a>
+              
+              {/* CV Request Button - Email */}
+              <motion.a
+                href="https://mail.google.com/mail/u/0/?fs=1&to=victorhillan007@gmail.com&su=CV Request&body=Hi Victor,%0D%0A%0D%0AI would love to view your CV. Could you please send it to me?%0D%0A%0D%0AThank you!&tf=cm"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="btn-secondary inline-flex items-center gap-2"
+              >
+                <Mail size={20} />
+                Request CV (Gmail)
+              </motion.a>
+              
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Link
+                  to="/contact"
+                  className="btn-secondary inline-flex items-center gap-2"
+                >
+                  <Mail size={20} />
+                  Let's Connect
+                </Link>
+              </motion.div>
+            </motion.div>
+          </div>
         </motion.div>
       </div>
     </section>
