@@ -11,8 +11,8 @@ const projects = [
     tech: 'Node.js,Google Forms, Vercel',
     problem: 'Building a scalable backend for a faith-based organization based in Nigeria.',
     outcome: 'A friendly website platform where new users can easily register and access resources.',
-  image: '/images/SPN.png',
-    demo: 'https://spn-nigeria.vercel.app/',
+  image: '/Images/SPN.png',
+    Live: 'https://spn-nigeria.vercel.app/',
     github: '', // Add GitHub repo if public
   },
   {

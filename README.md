@@ -1,49 +1,67 @@
 # portfolio
-#Live Demo:https://vickiehillan.vercel.app/
+#Live Demo:https://goldenchamp.vercel.app/
                   
-                  🌐 My Portfolio Website
-     About
-Welcome to my personal portfolio website! This project showcases my skills, experience, and creative projects in web development, programming, and design. The site is built using modern web technologies including React, JavaScript, and CSS frameworks, ensuring a modern, responsive, and interactive experience.
 
-  Features
-✔ Professional Design – Clean UI with an elegant dark mode. ✔ Responsive Layout – Works seamlessly across desktop and mobile devices. ✔ Projects – Highlights my best work, including web apps and coding projects. ✔ Contact Form – Allows visitors to reach out for collaboration. ✔ Dynamic CSS Effects – Adds interactive animations for better user experience.
+                  # Victor Muthomi Portfolio
 
-   Tech Stack
+                  🌐 **Live Demo:** https://goldenchamp.vercel.app/
 
-**Frontend:**
-- React 18.2.0 - Modern JavaScript library for building user interfaces
-- JavaScript (JSX) - Dynamic functionality and component logic
-- Tailwind CSS 3.3.5 - Utility-first CSS framework for styling
-- CSS3 - Custom styles and animations
+                  Welcome to my personal portfolio! This site showcases my journey as a faith-driven engineer, my best projects, leadership, and blog posts on tech, faith, and social good.
 
-**Animation & UI:**
-- Framer Motion 10.16.4 - Smooth animations and transitions
-- React Icons 4.11.0 - Icon library
-- Lucide React 0.292.0 - Additional icon components
+                  ## Features
+                  - Modern, responsive design with dark/light mode
+                  - Hero landing page with quick stats and call-to-action
+                  - About page: my story, values, and tech stack
+                  - Projects: featured work with live links and impact
+                  - Blog: technical and inspirational posts (Markdown-powered)
+                  - Contact: secure form, social media, and direct Gmail links
+                  - Extras: leadership and teamwork highlights
 
-**Build Tools & Development:**
-- Vite 4.5.0 - Fast build tool and development server
-- PostCSS 8.4.31 - CSS processing
-- Autoprefixer 10.4.16 - CSS vendor prefixing
-- ESLint 8.53.0 - Code linting and quality assurance
+                  ## Tech Stack
+                  - **Frontend:** React, Tailwind CSS, JSX
+                  - **Animation & UI:** Framer Motion, React Icons, Lucide React
+                  - **Build Tools:** Vite, PostCSS, Autoprefixer, ESLint
+                  - **Deployment:** Vercel
 
+                  ## Getting Started
 
-
-
-
-**Deployment:** Vercel
-
-**Package Manager:** npm
-
-## Installation & Usage
-
-To run the project locally:
-
-1. Clone the repository:
-```bash
+                  Clone the repository:
 git clone https://github.com/Hillan007/portfolio
 ```
 
+
+                  Navigate to the project directory:
+                  ```bash
+                  cd portfolio/project
+                  ```
+
+                  Install dependencies:
+                  ```bash
+                  npm install
+                  ```
+
+                  Start the development server:
+                  ```bash
+                  npm run dev
+                  ```
+
+                  Open your browser and visit `http://localhost:5173`
+
+                  ### Build for Production
+                  ```bash
+                  npm run build
+                  ```
+
+                  ## Contact & Socials
+
+                  - **Email:** [victorhillan007@gmail.com](https://mail.google.com/mail/u/0/?fs=1&to=victorhillan007@gmail.com&su=Contact&body=Hi%20Victor,%0D%0A%0D%0AI%20would%20like%20to%20connect%20with%20you!%0D%0A%0D%0AThank%20you!&tf=cm)
+                  - **LinkedIn:** [victor-muthomi-1a57b8305](https://www.linkedin.com/in/victor-muthomi-1a57b8305)
+                  - **GitHub:** [Hillan007](https://github.com/Hillan007)
+                  - **Facebook:** [profile](https://www.facebook.com/profile.php?id=100088873130498)
+                  - **X:** [victorhillan007](https://x.com/victorhillan007)
+
+                  ---
+                  Made with ❤️ by Victor Muthomi
 2. Navigate to the project directory:
 ```bash
 cd portfolio/project
