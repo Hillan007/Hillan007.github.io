@@ -6,7 +6,7 @@ const BlogPost = () => {
   const [content, setContent] = useState('');
 
   useEffect(() => {
-    fetch(`/src/blog/${slug}.md`)
+    fetch(`/blog/${slug}.md`)
       .then((res) => res.text())
       .then((text) => setContent(text));
   }, [slug]);

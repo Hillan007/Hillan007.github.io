@@ -96,15 +96,15 @@ const Hero = () => {
               variants={itemVariants}
               className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center mb-16"
             >
-              <motion.a
-                href="#projects"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="btn-primary inline-flex items-center gap-2"
-              >
-                View My Work
-                <ChevronDown size={20} />
-              </motion.a>
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Link
+                  to="/projects"
+                  className="btn-primary inline-flex items-center gap-2"
+                >
+                  View My Work
+                  <ChevronDown size={20} />
+                </Link>
+              </motion.div>
               
               {/* CV Request Button - Email */}
               <motion.a
