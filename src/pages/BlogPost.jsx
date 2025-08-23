@@ -17,14 +17,19 @@ const BlogPost = () => {
         {/* Simple markdown rendering, can be improved with a library */}
         <pre className="bg-transparent text-black dark:text-white whitespace-pre-wrap">{content}</pre>
       </div>
-      {/* Embed Moodly video if this is the Moodly blog */}
+      {/* Embed Moodly video from Google Drive if this is the Moodly blog */}
       {slug === 'building-moodly-from-idea-to-launch' && (
         <div className="mt-8">
           <h3 className="text-2xl font-bold mb-4 text-center">Watch Moodly in Action</h3>
-          <video controls className="w-full rounded-lg shadow-lg">
-            <source src="/vids/Moodly - Mental Health & Wellness Tracker - Brave 2025-07-24 15-05-27.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <div className="aspect-w-16 aspect-h-9 w-full rounded-lg shadow-lg overflow-hidden">
+            <iframe
+              src="https://drive.google.com/file/d/1MEIKSId7w17cFx85hY5IY4LvGPCGZnQ1/preview"
+              allow="autoplay"
+              allowFullScreen
+              className="w-full h-96 border-0"
+              title="Moodly Demo Video"
+            ></iframe>
+          </div>
         </div>
       )}
     </main>
