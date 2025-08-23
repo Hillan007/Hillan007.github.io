@@ -12,6 +12,11 @@ const posts = [
     excerpt: 'How I built Moodly, a music recommendation app, from inspiration to launch.',
     slug: 'building-moodly-from-idea-to-launch',
   },
+  {
+    title: 'Faith in Tech',
+    excerpt: 'How faith and scripture guide my coding, learning, and purpose in tech.',
+    slug: 'Faith-in tech',
+  },
 ];
 
 const BlogList = () => (
