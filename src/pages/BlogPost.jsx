@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ReactMarkdown from 'react-markdown';
 import { useParams } from 'react-router-dom';
 
 const BlogPost = () => {
@@ -14,8 +15,8 @@ const BlogPost = () => {
   return (
     <main className="max-w-2xl mx-auto py-10 px-4">
       <div className="prose max-w-none text-black dark:text-white">
-        {/* Simple markdown rendering, can be improved with a library */}
-        <pre className="bg-transparent text-black dark:text-white whitespace-pre-wrap">{content}</pre>
+        {/* Render markdown as HTML */}
+        <ReactMarkdown>{content}</ReactMarkdown>
       </div>
       {/* Embed Moodly video from Google Drive if this is the Moodly blog */}
       {slug === 'building-moodly-from-idea-to-launch' && (
