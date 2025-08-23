@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 
 const posts = [
@@ -15,7 +14,7 @@ const posts = [
   {
     title: 'Faith in Tech',
     excerpt: 'How faith and scripture guide my coding, learning, and purpose in tech.',
-    slug: 'Faith-in tech',
+    slug: 'faith-in-tech',
   },
 ];
 
