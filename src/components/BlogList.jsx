@@ -17,6 +17,12 @@ const posts = [
     slug: 'faith-in-tech',
   },
 
+  {
+    title: 'Returning to Campus: A Heart Full of Growth, A Spirit Ready to Lead',
+    excerpt: 'Reflections on a transformative holiday, serving in tech and church, and stepping into a new school season with faith and purpose.',
+    slug: 'returning-to-campus',
+  },
+
 ];
 
 const BlogList = () => (
