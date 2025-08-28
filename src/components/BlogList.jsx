@@ -5,22 +5,25 @@ const posts = [
     title: 'Flask Deployment for Beginners',
     excerpt: 'A step-by-step guide to getting your Flask app live on the web, with tips for Vercel and Heroku.',
     slug: 'flask-deployment-for-beginners',
+    date: '2025-08-15',
   },
   {
     title: 'Building Moodly: From Idea to Launch',
     excerpt: 'How I built Moodly, a music recommendation app, from inspiration to launch.',
     slug: 'building-moodly-from-idea-to-launch',
+    date: '2025-08-10',
   },
   {
     title: 'Faith in Tech',
     excerpt: 'How faith and scripture guide my coding, learning, and purpose in tech.',
     slug: 'faith-in-tech',
+    date: '2025-08-20',
   },
-
   {
     title: 'Returning to Campus: A Heart Full of Growth, A Spirit Ready to Lead',
     excerpt: 'Reflections on a transformative holiday, serving in tech and church, and stepping into a new school season with faith and purpose.',
     slug: 'returning-to-campus',
+    date: '2025-08-28',
   },
 
 ];
@@ -32,6 +35,7 @@ const BlogList = () => (
       {posts.map((post, idx) => (
         <div key={idx} className="bg-white dark:bg-gray-800 rounded-lg shadow p-4">
           <h3 className="text-xl font-semibold mb-1 text-black dark:text-white">{post.title}</h3>
+          <p className="text-xs text-gray-500 mb-2">{post.date}</p>
           <p className="mb-2 text-black dark:text-white">{post.excerpt}</p>
           <Link to={`/blog/${post.slug}`} className="text-blue-600 underline">Read More</Link>
         </div>
