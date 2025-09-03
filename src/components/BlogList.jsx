@@ -25,6 +25,12 @@ const posts = [
     slug: 'returning-to-campus',
     date: '2025-08-28',
   },
+  {
+    title: 'Dev Nights Confessions',
+    excerpt: 'A loyal laptop, late nights, and the code that keeps me going.',
+    slug: 'dev-nights-confessions',
+    date: '2025-09-06',
+  },
 
 ];
 

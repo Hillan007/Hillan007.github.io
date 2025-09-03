@@ -24,6 +24,11 @@ const posts = [
     slug: 'returning-to-campus',
     date: '2025-08-28',
   },
+  {
+    title: 'Dev Nights Confessions',
+    slug: 'dev-nights-confessions',
+    date: '2025-09-06',
+  },
 ];
 
 const BlogPost = () => {
