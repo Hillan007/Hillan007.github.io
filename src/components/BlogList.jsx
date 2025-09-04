@@ -31,6 +31,12 @@ const posts = [
     slug: 'dev-nights-confessions',
     date: '2025-09-06',
   },
+  {
+    title: 'When the Chase Fades: A Quiet Revolution in Me',
+    excerpt: 'How my perspective on relationships, purpose, and faith has shifted from chasing to building.',
+    slug: 'when-the-chase-fades',
+    date: '2025-09-07',
+  },
 
 ];
 
