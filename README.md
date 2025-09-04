@@ -97,6 +97,8 @@ LinkedIn: www.linkedin.com/in/victor-muthomi-the-best
 
 GitHub:  https://github.com/Hillan007
 
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
 
 
 
