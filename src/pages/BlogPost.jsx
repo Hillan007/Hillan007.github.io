@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import ReactMarkdown from 'react-markdown';
 import { useParams } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
 
 // Blog post metadata (keep in sync with BlogList.jsx)
 const posts = [
@@ -33,26 +33,32 @@ const posts = [
 
 const BlogPost = () => {
   const { slug } = useParams();
+  const post = posts.find((p) => p.slug === slug);
   const [content, setContent] = useState('');
 
   useEffect(() => {
     fetch(`/blog/${slug}.md`)
       .then((res) => res.text())
-      .then((text) => setContent(text));
+      .then(setContent);
   }, [slug]);
 
-  // Find the post metadata by slug
-  const postMeta = posts.find((p) => p.slug === slug);
+  if (!post) {
+    return (
+      <div className="max-w-2xl mx-auto py-10 text-center text-red-600">
+        <h2 className="text-2xl font-bold mb-4">Blog Post Not Found</h2>
+        <p>Sorry, the blog post you are looking for does not exist.</p>
+      </div>
+    );
+  }
 
   return (
-    <main className="max-w-2xl mx-auto py-10 px-4">
-      {postMeta && (
-        <p className="text-xs text-gray-500 mb-4 text-right">{postMeta.date}</p>
-      )}
-      <div className="prose max-w-none text-black dark:text-white">
+    <section className="max-w-2xl mx-auto py-10 px-4">
+      <h1 className="text-4xl font-bold mb-2 text-black dark:text-white">{post.title}</h1>
+      <p className="text-sm text-gray-500 mb-6">{post.date}</p>
+      <article className="prose prose-lg dark:prose-invert prose-h1:text-2xl prose-h2:text-xl prose-h3:text-lg prose-p:mb-4 prose-li:mb-2 prose-strong:font-bold prose-blockquote:italic prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:text-gray-600 dark:prose-blockquote:text-gray-300">
         {/* Render markdown as HTML */}
         <ReactMarkdown>{content}</ReactMarkdown>
-      </div>
+      </article>
       {/* Embed Moodly video from Google Drive if this is the Moodly blog */}
       {slug === 'building-moodly-from-idea-to-launch' && (
         <div className="mt-8">
@@ -68,7 +74,7 @@ const BlogPost = () => {
           </div>
         </div>
       )}
-    </main>
+    </section>
   );
 };
 
