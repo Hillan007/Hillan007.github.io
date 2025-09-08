@@ -1,15 +1,33 @@
 import React from 'react';
 
 const ProjectCard = ({ title, tech, problem, outcome, image, demo, github }) => (
-  <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-4 max-w-md mx-auto mb-6">
-    {image && <img src={image} alt={title} className="w-full h-40 object-cover rounded mb-3" />}
-    <h3 className="text-xl font-bold mb-1">{title}</h3>
-  <div className="text-sm mb-2 text-black dark:text-white">{tech}</div>
-  <p className="mb-2 text-black dark:text-white"><span className="font-semibold">Problem:</span> {problem}</p>
-  <p className="mb-2 text-black dark:text-white"><span className="font-semibold">Outcome:</span> {outcome}</p>
-    <div className="flex gap-3 mt-2">
-  {demo && <a href={demo} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">Live on</a>}
-  {github && <a href={github} target="_blank" rel="noopener noreferrer" className="text-black dark:text-white underline">GitHub</a>}
+  <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6 w-80 flex flex-col items-center">
+    {image && <img src={image} alt={title} className="w-32 h-32 object-cover rounded-full mb-4 border-4 border-blue-400" />}
+    <h3 className="text-xl font-bold mb-2 text-blue-700 dark:text-blue-300">{title}</h3>
+    <p className="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-2">Tech: {tech}</p>
+    <p className="mb-2 text-md text-indigo-700 dark:text-indigo-300 font-medium">Problem: {problem}</p>
+    <p className="mb-2 text-md text-green-700 dark:text-green-300 font-medium">Outcome: {outcome}</p>
+    <div className="flex gap-4 mt-4">
+      {demo && (
+        <a
+          href={demo}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+        >
+          Live
+        </a>
+      )}
+      {github && (
+        <a
+          href={github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-3 py-1 bg-gray-800 text-white rounded hover:bg-gray-900 transition"
+        >
+          GitHub
+        </a>
+      )}
     </div>
   </div>
 );
