@@ -8,9 +8,9 @@ import unitradeImg from '../assets/images/Unitrade.png';
 const projects = [
   {
     title: 'SPN Nigeria Platform',
-    tech: 'Node.js,Google Forms, Vercel',
-    problem: 'Building a scalable backend for a faith-based organization based in Nigeria.',
-    outcome: 'A friendly website platform where new users can easily register and access resources.',
+    tech: 'Node.js, Google Forms, Vercel',
+    problem: 'Developed a scalable backend for a faith-based organization in Nigeria, enabling seamless user registration and resource access.',
+    outcome: 'Launched a user-friendly platform that empowers new members to join, connect, and benefit from community resources.',
     image: '/Images/SPN.png',
     demo: 'https://spn-nigeria.vercel.app/',
     github: '', // Add GitHub repo if public
@@ -18,8 +18,8 @@ const projects = [
   {
     title: 'Moodly',
     tech: 'Flask, React, Music API, OpenAI',
-    problem: 'Help users discover music that matches their mood.',
-    outcome: 'Enhanced user engagement and music discovery.',
+    problem: 'Created a solution for users to discover music tailored to their mood, enhancing emotional well-being and engagement.',
+    outcome: 'Boosted user satisfaction and music exploration through personalized recommendations and interactive features.',
     image: moodlyImg,
     demo: 'https://moodly-2-0.vercel.app/',
     github: 'https://github.com/Hillan007/Moodly-2.0.1',
@@ -27,17 +27,17 @@ const projects = [
   {
     title: 'Homework-Ally',
     tech: 'Python, FastAPI, Jinja2, Vercel, OpenAI',
-    problem: 'A friendly homework assistant for young learners.',
-    outcome: 'Saved 3+ study hours.',
+    problem: 'Built a homework assistant to help young learners and students tackle assignments efficiently and confidently.',
+    outcome: 'Saved students over 3 study hours per week, making learning more accessible and enjoyable.',
     image: homeworkImg,
     demo: 'https://homework-ally.vercel.app/',
     github: 'https://github.com/Hillan007/Homework-ally-2.0',
   },
   {
-    title: 'Campus Based trading platform',
-    tech: 'React, Node.js, MongoDB ',
-    problem: 'Improve discoverability for a nonprofit organization.',
-    outcome: 'Improved discoverability by 60%.',
+    title: 'Campus Based Trading Platform',
+    tech: 'React, Node.js, MongoDB',
+    problem: 'Addressed the lack of a trusted peer-to-peer marketplace for campus communities.',
+    outcome: 'Engineered a secure, transparent digital hub for student commerce—empowering entrepreneurship, smart reuse, and growth.',
     image: unitradeImg,
     demo: 'https://unitradeproject.netlify.app/',
     github: 'https://github.com/Hillan007/UniTrade.io-',
