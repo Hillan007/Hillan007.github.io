@@ -29,6 +29,11 @@ const posts = [
     slug: 'dev-nights-confessions',
     date: '2025-09-06',
   },
+  {
+    title: 'Salt in the Wards, Light in the Shadows',
+    slug: 'salt-in-the-wards',
+    date: '2025-09-08',
+  },
 ];
 
 const BlogPost = () => {
