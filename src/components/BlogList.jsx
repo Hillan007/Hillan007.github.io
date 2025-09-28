@@ -37,6 +37,12 @@ const posts = [
     slug: 'when-the-chase-fades',
     date: '2025-09-07',
   },
+  {
+    title: 'Salt in the Wards, Light in the Shadows',
+    excerpt: 'A hospital visit turns into a lesson on faith, courage, and being present for others.',
+    slug: 'salt-in-the-wards',
+    date: '2025-09-08',
+  },
 
 ];
 
