@@ -28,7 +28,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false)
@@ -41,14 +41,20 @@ const Contact = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Phone',
-      details: ['+254757148346', '+254737375963'],
-      action: 'tel:+254757148346'
+      details: [
+        { label: '+254757148346', href: 'tel:+254757148346' },
+        { label: '+254737375963', href: 'tel:+254737375963' },
+      ],
+      action: null
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      details: ['victorhillan007@gmail.com', 'sc21232332023@mut.ac.ke'],
-      action: 'mailto:victorhillan007@gmail.com'
+      details: [
+        { label: 'victorhillan007@gmail.com', href: 'mailto:victorhillan007@gmail.com' },
+        { label: 'sc21232332023@mut.ac.ke', href: 'mailto:sc21232332023@mut.ac.ke' },
+      ],
+      action: null
     },
     {
       icon: <MapPin className="w-6 h-6" />,
@@ -140,7 +146,7 @@ const Contact = () => {
                   Get in Touch
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-8">
-                  I'm always open to discussing new opportunities, creative projects, 
+                  I'm always open to discussing new opportunities, creative projects,
                   or just having a friendly chat about technology and innovation.
                 </p>
               </div>
@@ -161,20 +167,24 @@ const Contact = () => {
                       <h4 className="font-semibold text-gray-900 dark:text-white mb-1">
                         {info.title}
                       </h4>
-                      {info.details.map((detail, idx) => (
-                        <p key={idx} className="text-gray-600 dark:text-gray-300 text-sm">
-                          {info.action ? (
-                            <a 
-                              href={info.action}
-                              className="hover:text-primary-500 transition-colors duration-200"
-                            >
-                              {detail}
-                            </a>
-                          ) : (
-                            detail
-                          )}
-                        </p>
-                      ))}
+                      {info.details.map((detail, idx) => {
+                        const text = typeof detail === 'string' ? detail : detail.label;
+                        const href = typeof detail === 'string' ? info.action : detail.href;
+                        return (
+                          <p key={idx} className="text-gray-600 dark:text-gray-300 text-sm">
+                            {href ? (
+                              <a
+                                href={href}
+                                className="hover:text-primary-500 transition-colors duration-200"
+                              >
+                                {text}
+                              </a>
+                            ) : (
+                              text
+                            )}
+                          </p>
+                        );
+                      })}
                     </div>
                   </motion.div>
                 ))}
@@ -231,7 +241,7 @@ const Contact = () => {
                       placeholder="Your name"
                     />
                   </div>
-                  
+
                   <div>
                     <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                       Email

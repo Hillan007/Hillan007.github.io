@@ -32,7 +32,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       <ParticleBackground />
-      
+
       <div className="container-custom relative z-10">
         <motion.div
           variants={containerVariants}
@@ -46,7 +46,7 @@ const Hero = () => {
             className="flex-shrink-0 flex justify-center md:justify-start mb-6 md:mb-0 md:mr-10"
           >
             <img
-              src={victorImg}
+              src="/Images/me2026.jpg"
               alt="Victor Muthomi"
               className="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover object-[center_30%] border-2 border-primary-500 shadow-lg"
             />
@@ -87,7 +87,7 @@ const Hero = () => {
               variants={itemVariants}
               className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl leading-relaxed"
             >
-              A passionate Software Engineering student from Meru, Kenya, 
+              A passionate Software Engineering student from beautiful Kenya,
               transforming local challenges into innovative tech solutions.
             </motion.p>
 
@@ -105,7 +105,7 @@ const Hero = () => {
                   <ChevronDown size={20} />
                 </Link>
               </motion.div>
-              
+
               {/* CV Request Button - Email */}
               <motion.a
                 href="https://mail.google.com/mail/u/0/?fs=1&to=victorhillan007@gmail.com&su=CV Request&body=Hi Victor,%0D%0A%0D%0AI would love to view your CV. Could you please send it to me?%0D%0A%0D%0AThank you!&tf=cm"
@@ -118,7 +118,7 @@ const Hero = () => {
                 <Mail size={20} />
                 Request CV (Gmail)
               </motion.a>
-              
+
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link
                   to="/contact"

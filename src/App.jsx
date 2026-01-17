@@ -13,6 +13,7 @@ import Contact from './pages/Contact';
 import Extras from './pages/Extras';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfUse from './pages/TermsOfUse';
+import Certificates from './pages/Certificates';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/certificates" element={<Certificates />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
@@ -39,4 +41,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
