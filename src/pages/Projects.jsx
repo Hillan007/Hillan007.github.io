@@ -22,9 +22,11 @@ const projects = [
     outcome: 'Boosted user satisfaction and music exploration through personalized recommendations and interactive features.',
     image: moodlyImg,
     demo: 'https://moodly-2-0.vercel.app/',
+    video: 'https://drive.google.com/file/d/1MEIKSId7w17cFx85hY5IY4LvGPCGZnQ1/view',
+    note: 'Moodly Version 2 coming soon – watch the preview.',
     github: 'https://github.com/Hillan007/Moodly-2.0.1',
   },
-  
+
   {
     title: 'Campus Based Trading Platform',
     tech: 'React, Node.js, MongoDB',
