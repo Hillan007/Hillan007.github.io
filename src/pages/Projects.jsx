@@ -24,15 +24,7 @@ const projects = [
     demo: 'https://moodly-2-0.vercel.app/',
     github: 'https://github.com/Hillan007/Moodly-2.0.1',
   },
-  {
-    title: 'Homework-Ally',
-    tech: 'Python, FastAPI, Jinja2, Vercel, OpenAI',
-    problem: 'Built a homework assistant to help young learners and students tackle assignments efficiently and confidently.',
-    outcome: 'Saved students over 3 study hours per week, making learning more accessible and enjoyable.',
-    image: homeworkImg,
-    demo: 'https://homework-ally.vercel.app/',
-    github: 'https://github.com/Hillan007/Homework-ally-2.0',
-  },
+  
   {
     title: 'Campus Based Trading Platform',
     tech: 'React, Node.js, MongoDB',
