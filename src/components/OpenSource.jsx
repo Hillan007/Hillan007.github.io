@@ -2,12 +2,10 @@ import React from 'react';
 
 const openSource = [
   {
-    title: 'Flask-Auth-Plus',
-    desc: 'Contributed authentication features to Flask-Auth-Plus.'
-  },
-  {
-    title: 'React-SEO-Helper',
-    desc: 'Improved accessibility and SEO for React-SEO-Helper.'
+    title: 'HacktoberfestForBeginners',
+    desc: 'Added time conversion module with unit tests, fixed sliding-window algorithm, and implemented GitHub Actions CI workflow for automated Python testing.',
+    url: 'https://github.com/vichitr/HacktoberfestForBeginners',
+    pr: 'https://github.com/vichitr/HacktoberfestForBeginners/pull/607'
   }
 ];
 
@@ -17,8 +15,23 @@ const OpenSource = () => (
     <ul className="space-y-4">
       {openSource.map((o, idx) => (
         <li key={idx} className="bg-white dark:bg-gray-800 rounded-lg shadow p-4">
-          <div className="font-semibold">{o.title}</div>
-          <div className="text-gray-600 dark:text-gray-300">{o.desc}</div>
+          <div className="font-semibold">
+            {o.url ? (
+              <a href={o.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">
+                {o.title}
+              </a>
+            ) : (
+              o.title
+            )}
+          </div>
+          <div className="text-gray-600 dark:text-gray-300 mt-2">{o.desc}</div>
+          {o.pr && (
+            <div className="mt-2">
+              <a href={o.pr} target="_blank" rel="noopener noreferrer" className="text-sm text-blue-500 hover:underline">
+                View Pull Request →
+              </a>
+            </div>
+          )}
         </li>
       ))}
     </ul>

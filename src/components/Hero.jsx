@@ -87,7 +87,7 @@ const Hero = () => {
               variants={itemVariants}
               className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl leading-relaxed"
             >
-              A passionate Software Engineering student from beautiful Kenya,
+              A passionate Software Engineering student from the beautiful country of Kenya,
               transforming local challenges into innovative tech solutions.
             </motion.p>
 

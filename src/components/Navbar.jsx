@@ -8,8 +8,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [projectsOpen, setProjectsOpen] = useState(false);
+  const [extrasOpen, setExtrasOpen] = useState(false);
   const { isDark, toggleTheme } = useTheme()
   const containerRef = useRef(null);
+  const extrasContainerRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,9 +26,15 @@ const Navbar = () => {
       if (containerRef.current && !containerRef.current.contains(e.target)) {
         setProjectsOpen(false);
       }
+      if (extrasContainerRef.current && !extrasContainerRef.current.contains(e.target)) {
+        setExtrasOpen(false);
+      }
     }
     function onKey(e) {
-      if (e.key === 'Escape') setProjectsOpen(false);
+      if (e.key === 'Escape') {
+        setProjectsOpen(false);
+        setExtrasOpen(false);
+      }
     }
     window.addEventListener('click', onClick);
     window.addEventListener('keydown', onKey);
@@ -41,9 +49,9 @@ const Navbar = () => {
     { name: 'About', to: '/about' },
     { name: 'Blog', to: '/blog' },
     { name: 'Contact', to: '/contact' },
-    { name: 'Extras', to: '/extras' },
   ];
   const [mobileProjectsOpen, setMobileProjectsOpen] = useState(false);
+  const [mobileExtrasOpen, setMobileExtrasOpen] = useState(false);
 
   return (
     <motion.nav
@@ -113,6 +121,44 @@ const Navbar = () => {
                 </div>
               )}
             </div>
+
+            {/* Extras dropdown */}
+            <div
+              ref={extrasContainerRef}
+              className="relative"
+            >
+              <button
+                onClick={() => setExtrasOpen(prev => !prev)}
+                aria-haspopup="true"
+                aria-expanded={extrasOpen}
+                className="flex items-center gap-2 text-gray-700 dark:text-gray-200 hover:text-indigo-600 focus:outline-none"
+              >
+                Extras
+                <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
+                  <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clipRule="evenodd" />
+                </svg>
+              </button>
+
+              {extrasOpen && (
+                <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded shadow-md z-20">
+                  <Link
+                    to="/extras?tab=leadership"
+                    onClick={() => setExtrasOpen(false)}
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    Leadership
+                  </Link>
+                  <Link
+                    to="/extras?tab=opensource"
+                    onClick={() => setExtrasOpen(false)}
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    Open Source
+                  </Link>
+                </div>
+              )}
+            </div>
+
             {/* Theme Toggle */}
             <motion.button
               whileHover={{ scale: 1.1 }}
@@ -195,6 +241,38 @@ const Navbar = () => {
                     className="block px-2 py-1 text-sm text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400"
                   >
                     Certificates
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            {/* Mobile Extras dropdown */}
+            <div className="px-4">
+              <button
+                onClick={() => setMobileExtrasOpen(prev => !prev)}
+                className="w-full flex items-center justify-between py-2 text-black dark:text-gray-300 font-medium"
+                aria-expanded={mobileExtrasOpen}
+              >
+                <span>Extras</span>
+                <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
+                  <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clipRule="evenodd" />
+                </svg>
+              </button>
+              {mobileExtrasOpen && (
+                <div className="pl-2 space-y-2 pb-2">
+                  <Link
+                    to="/extras?tab=leadership"
+                    onClick={() => { setIsOpen(false); setMobileExtrasOpen(false); }}
+                    className="block px-2 py-1 text-sm text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400"
+                  >
+                    Leadership
+                  </Link>
+                  <Link
+                    to="/extras?tab=opensource"
+                    onClick={() => { setIsOpen(false); setMobileExtrasOpen(false); }}
+                    className="block px-2 py-1 text-sm text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400"
+                  >
+                    Open Source
                   </Link>
                 </div>
               )}
