@@ -1,6 +1,6 @@
 # 🌟 Victor Muthomi Portfolio
 
-🔗 **Live Demo**: [goldenchamp.vercel.app](https://goldenchamp.vercel.app/)
+🔗 **Live Site**: [goldenchamp.vercel.app](https://goldenchamp.vercel.app/)
 
 Hi! 👋 Welcome to my personal portfolio—a space where I showcase my journey as a faith-driven engineer, innovative projects, leadership experiences, and insightful blog posts at the intersection of technology, faith, and social good. This site reflects my passion, values, and aspirations to impact the world positively.
 
