@@ -1,4 +1,4 @@
-# 🌟 Victor Muthomi Portfolio
+# Victor Muthomi Portfolio
 
 🔗 **Live Site**: [goldenchamp.vercel.app](https://goldenchamp.vercel.app/)
 
@@ -6,7 +6,7 @@ Hi! 👋 Welcome to my personal portfolio—a space where I showcase my journey 
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 - **Modern Design:** Responsive layout with elegant dark and light modes.
 - **Hero Section:** Quick stats and call-to-action to showcase who I am.
@@ -18,7 +18,7 @@ Hi! 👋 Welcome to my personal portfolio—a space where I showcase my journey 
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 - ReactJS, Tailwind CSS, JSX
@@ -33,7 +33,7 @@ Hi! 👋 Welcome to my personal portfolio—a space where I showcase my journey 
 
 ---
 
-## 🏗️ Local Setup Instructions
+## Local Setup Instructions
 
 Follow these steps to explore or contribute to the project:
 
