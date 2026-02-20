@@ -1,4 +1,4 @@
-# Victor Muthomi Portfolio
+# Victor Hillan Muthomi Portfolio
 
 🔗 **Live Site**: [goldenchamp.vercel.app](https://goldenchamp.vercel.app/)
 
