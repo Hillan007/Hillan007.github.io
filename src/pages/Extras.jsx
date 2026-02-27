@@ -22,8 +22,8 @@ const Extras = () => {
         <button
           onClick={() => setActiveTab('leadership')}
           className={`px-6 py-3 font-medium transition-colors ${activeTab === 'leadership'
-              ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
-              : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+            ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
+            : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
             }`}
         >
           Leadership
@@ -31,8 +31,8 @@ const Extras = () => {
         <button
           onClick={() => setActiveTab('opensource')}
           className={`px-6 py-3 font-medium transition-colors ${activeTab === 'opensource'
-              ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
-              : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+            ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
+            : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
             }`}
         >
           Open Source
@@ -45,10 +45,108 @@ const Extras = () => {
           <p className="mb-8 text-lg text-black dark:text-white">
             Apart from coding, I am a leader who inspires and enjoys teamwork. I believe in empowering others, building strong teams, and making a positive impact beyond technology.
           </p>
-          <div className="flex flex-wrap justify-center gap-8">
-            <img src="/Images/Gents.png" alt="Teamwork" className="w-60 h-40 object-cover rounded shadow" />
-            <img src="/Images/leader.jpg" alt="Leadership" className="w-60 h-40 object-cover rounded shadow" />
-            <img src="/Images/BBS.png" alt="Inspiration" className="w-60 h-40 object-cover rounded shadow" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {/* Leadership Card 1 */}
+            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <img
+                src="/Images/Gents.png"
+                alt="Team Building"
+                className="w-full h-56 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-0 transition-transform duration-300">
+                  <h3 className="text-xl font-bold mb-2">Team Building</h3>
+                  <p className="text-sm opacity-90">
+                    Leading and mentoring fellow students, fostering collaboration and growth within our tech community
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Leadership Card 2 */}
+            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <img
+                src="/Images/leader.jpg"
+                alt="Leadership in Action"
+                className="w-full h-56 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-0 transition-transform duration-300">
+                  <h3 className="text-xl font-bold mb-2">Leadership in Action</h3>
+                  <p className="text-sm opacity-90">
+                    Taking initiative in organizing events and guiding teams towards achieving shared goals
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Leadership Card 3 */}
+            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <img
+                src="/Images/BBS.png"
+                alt="Community Impact"
+                className="w-full h-56 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-0 transition-transform duration-300">
+                  <h3 className="text-xl font-bold mb-2">Community Impact</h3>
+                  <p className="text-sm opacity-90">
+                    Creating positive change beyond the screen through community service and faith-based initiatives
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Leadership Card 4 */}
+            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <img
+                src="/Images/Aids day.png"
+                alt="Health Awareness"
+                className="w-full h-56 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-0 transition-transform duration-300">
+                  <h3 className="text-xl font-bold mb-2">Health Advocacy</h3>
+                  <p className="text-sm opacity-90">
+                    Raising awareness on critical health issues and championing community wellness initiatives
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Leadership Card 5 */}
+            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <img
+                src="/Images/mental health day.png"
+                alt="Mental Health Support"
+                className="w-full h-56 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-0 transition-transform duration-300">
+                  <h3 className="text-xl font-bold mb-2">Mental Wellness</h3>
+                  <p className="text-sm opacity-90">
+                    Supporting mental health awareness and creating safe spaces for open conversations within communities
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Leadership Card 6 */}
+            <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <img
+                src="/Images/aids day2.png"
+                alt="Social Responsibility"
+                className="w-full h-56 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-0 transition-transform duration-300">
+                  <h3 className="text-xl font-bold mb-2">Social Responsibility</h3>
+                  <p className="text-sm opacity-90">
+                    Leading meaningful campaigns to create awareness and drive social change in society
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       )}
