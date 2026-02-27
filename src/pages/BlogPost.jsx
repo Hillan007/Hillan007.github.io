@@ -39,6 +39,11 @@ const posts = [
     slug: 'salt-in-the-wards',
     date: '2025-09-08',
   },
+  {
+    title: 'God\'s Timing is the Best',
+    slug: 'gods-timing-is-the-best',
+    date: '2026-02-27',
+  },
 ];
 
 const BlogPost = () => {

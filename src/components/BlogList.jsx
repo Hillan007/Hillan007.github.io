@@ -43,6 +43,12 @@ const posts = [
     slug: 'salt-in-the-wards',
     date: '2025-09-08',
   },
+  {
+    title: 'God\'s Timing is the Best',
+    excerpt: 'Leading without a smartphone taught me that tools don\'t define leadership—the vessel does.',
+    slug: 'gods-timing-is-the-best',
+    date: '2026-02-27',
+  },
 
 ];
 
