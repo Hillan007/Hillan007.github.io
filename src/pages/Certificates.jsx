@@ -8,7 +8,7 @@ const sampleCertificates = [
         date: '2025-12',
         image: '/certs/AI for Software Engineering certificate.pdf', // put files in public/certs
         tags: ['Python', 'Web Technologies', 'Database Management', 'Startup Building & Employability'],
-        
+
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const sampleCertificates = [
         date: '2025-05',
         image: '/certs/victor-muthomi_moringa.pdf',
         tags: ['practical skills', 'Generative AI', 'AI integration'],
-        
+
     },
     {
         id: 3,
@@ -26,7 +26,7 @@ const sampleCertificates = [
         date: '2025-11',
         image: '/certs/JavaScript_Essentials_1_certificate.pdf',
         tags: ['Core Syntax & Data Handling', 'Control Flow & Functions', 'Collections & Structures'],
-        
+
     },
     {
         id: 4,
@@ -35,7 +35,7 @@ const sampleCertificates = [
         date: '2025-11',
         image: '/certs/JavaScript_Essentials_2_certificate.pdf',
         tags: ['DOM & Event Handling', 'Modern ES6+ Features ', 'Asynchronous Programming & Error Handling '],
-        
+
     },
     {
         id: 5,
@@ -44,7 +44,7 @@ const sampleCertificates = [
         date: '2025-07',
         image: '/certs/Career_Essentials_in_Cybersecurity_by_Microsoft_and_LinkedIn.pdf',
         tags: ['Cybersecurity Fundamentals', 'Risk Management', 'Network Security'],
-        
+
     },
     {
         id: 6,
@@ -53,16 +53,16 @@ const sampleCertificates = [
         date: '2025-08',
         image: '/certs/The Cybersecurity Threat Landscape.pdf',
         tags: ['Cybersecurity', 'Threat & Vulnerability Management'],
-        
+
     },
-     {
+    {
         id: 7,
         title: 'Generative AI Foundations',
         issuer: 'LinkedIn Learning',
         date: '2025-09',
         image: '/certs/What_Is_Generative_AI.pdf',
         tags: ['Generative AI', 'Generative AI Tools', 'Artificial Intelligence'],
-        
+
     },
     // ...add your certificates here
 ];

@@ -1,21 +1,17 @@
-# Salt in the Wards, Light in the Shadows
+Salt in the Wards, Light in the Shadows
 
-**Date:** 2025-09-08
+Date: 2025-09-08
 
-Today, I walked into a hospital not as a patient, but as a messenger. Alongside my fellow believers from Murang’a University Christian Union, we stepped into a space heavy with pain, uncertainty, and quiet battles. Our mission was simple: to encourage. But what unfolded was far deeper.
+Today, I walked into the hospital;not as a patient, but as a messenger. I was with friends from the Murang’a University Christian Union. The place felt heavy, you could just sense the pain and quiet struggles all around. We came there to encourage people. That was the plan, at least. But what happened went way deeper.
 
-As I stood in the wards, surrounded by patients whose bodies were weary but whose spirits still reached for hope, I felt a stirring. I was asked to speak—and to my surprise, I did. Not with trembling, but with a courage that had been quietly growing in me. It wasn’t just my voice that filled the room; it was the Word, the light, the salt.
+Standing in the wards, looking at people whose bodies were worn down but who still clung to hope, something shifted inside me. Someone asked me to speak. I actually did;no shaking, no stumbling, just this steady courage that seemed to come out of nowhere. It wasn’t really about me or my words. It felt like the Word itself, like light and salt filling the space.
 
-In our Bible Study, we’ve often talked about being the salt of the earth and the light of the world. But today, I understood it differently. Salt doesn’t stay in the shaker. Light doesn’t hide under a bowl. We are called to go—to enter the places others avoid, to bring flavor to the bland, healing to the broken, and clarity to the confused.
+In Bible Study, we talk a lot about being salt and light. I thought I understood it, but today hit different. Salt isn’t meant to stay in the shaker. Light doesn’t belong under a bowl. We’re supposed to go out there, into places others avoid;bring some flavor to lives that feel bland, bring healing where things are broken, help people see when they’re lost in confusion.
 
-> “You are the light of the world. A city set on a hill cannot be hidden.” — Matthew 5:14
+“You are the light of the world. A city set on a hill cannot be hidden.” — Matthew 5:14
 
-I saw faces soften. I saw tears held back. I saw God move—not through grand gestures, but through presence. Through a hand held, a prayer whispered, a word spoken with love.
+I watched people’s faces soften. Some held back tears. I could see God moving—not with big, flashy miracles, but in small ways. A held hand. A whispered prayer. A word that let someone know they’re not alone.
 
-Health is a gift. But so is the ability to serve while we’re healthy. Today reminded me that our strength isn’t just for us—it’s for others. And our faith isn’t meant to be stored—it’s meant to be shared.
+Health really is a gift, but so is the chance to serve while we’ve got it. Today made me realize that our strength isn’t just for us. We’re meant to use it for others. Faith isn’t something you store up on a shelf. It’s something you pour out, right where you are.
 
-To anyone reading this:  
-Don’t wait for perfect conditions to shine.  
-The world needs your light now.  
-The hurting need your salt now.  
-Step out. Speak up. Be present.
+If you’re reading this, don’t hang back waiting for the perfect moment. The world needs your light now. There are people hurting who need what you’ve got. So step out. Say something. Show up. Be there.
