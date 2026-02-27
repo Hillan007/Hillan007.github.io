@@ -30,6 +30,11 @@ const posts = [
     date: '2025-09-06',
   },
   {
+    title: 'When the Chase Fades: A Quiet Revolution in Me',
+    slug: 'when-the-chase-fades',
+    date: '2025-09-07',
+  },
+  {
     title: 'Salt in the Wards, Light in the Shadows',
     slug: 'salt-in-the-wards',
     date: '2025-09-08',
