@@ -1,12 +1,12 @@
-# 🌟 Victor Muthomi Portfolio
+# Victor Hillan Muthomi Portfolio
 
-🔗 **Live Demo**: [goldenchamp.vercel.app](https://goldenchamp.vercel.app/)
+🔗 **Live Site**: [goldenchamp.vercel.app](https://goldenchamp.vercel.app/)
 
 Hi! 👋 Welcome to my personal portfolio—a space where I showcase my journey as a faith-driven engineer, innovative projects, leadership experiences, and insightful blog posts at the intersection of technology, faith, and social good. This site reflects my passion, values, and aspirations to impact the world positively.
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 - **Modern Design:** Responsive layout with elegant dark and light modes.
 - **Hero Section:** Quick stats and call-to-action to showcase who I am.
@@ -18,7 +18,7 @@ Hi! 👋 Welcome to my personal portfolio—a space where I showcase my journey 
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 - ReactJS, Tailwind CSS, JSX
@@ -33,7 +33,7 @@ Hi! 👋 Welcome to my personal portfolio—a space where I showcase my journey 
 
 ---
 
-## 🏗️ Local Setup Instructions
+## Local Setup Instructions
 
 Follow these steps to explore or contribute to the project:
 
