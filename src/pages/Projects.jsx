@@ -36,6 +36,16 @@ const projects = [
     demo: 'https://unitradeproject.netlify.app/',
     github: 'https://github.com/Hillan007/UniTrade.io-',
   },
+  {
+    title: 'Moodly 2.0',
+    tech: 'Python, React, Music API, OpenAI,Supabase',
+    problem: 'Moodly 2.0 is an enhanced version of the original Moodly app, designed to provide an even more personalized and engaging music discovery experience. The project focused on improving the recommendation algorithm, adding new interactive features, and refining the user interface based on feedback from the initial release.',
+    outcome: 'Delivered a more intuitive and engaging user experience with improved personalization and a modernized UI.',
+    image: '/Images/Moodly2.0.png',
+    demo: 'https://moodly-2.vercel.app/',
+    note: '🚧 Work in Progress: Moodly 2.0 is currently under active development. The music API integration may experience occasional issues as we refine the platform.',
+    github: 'https://github.com/Hillan007/Moodly-2.0.1',
+  },
 ];
 
 const Projects = () => {
