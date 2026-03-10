@@ -1,16 +1,37 @@
 import React from 'react';
 
 const AboutSection = () => (
-  <section className="py-10 max-w-3xl mx-auto text-center">
-    <h2 className="text-3xl font-bold mb-4 text-black dark:text-white">My Story</h2>
-    <p className="mb-4 text-black dark:text-white">
-      ✈️ <strong>From Skies to Code: A Journey of Purpose</strong><br /><br />
-      I’m Victor Hillan—most people call me Champ. My first dream was flying, and that vision of soaring above the clouds still inspires me.<br /><br />
-      But along the way, I discovered another passion: software engineering.<br /><br />
-      What began as curiosity became a calling. I’ve built apps like Moodly, optimized SEO for nonprofits, and designed media that moves hearts.<br /><br />
-      In 2026, I’m expanding into AI-powered solutions and scalable web platforms, blending creativity, faith, and technology to reach people across borders.<br /><br />
-      Software engineering didn’t replace my dream of flying—it expanded it. Now I pilot ideas, communities, and innovation—one keystroke at a time.
-    </p>
+  <section className="py-16 max-w-4xl mx-auto">
+    <h2 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">About Me</h2>
+    <div className="space-y-8">
+      <div>
+        <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+          I'm Victor Hillan, a software engineer passionate about building scalable solutions that drive real impact. With expertise in full-stack development, AI integration, and community-focused technology, I transform complex challenges into elegant digital products.
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">My Approach</h3>
+          <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+            <li>• User-centered design and development</li>
+            <li>• Scalable, maintainable code architecture</li>
+            <li>• Data-driven decision making</li>
+            <li>• Cross-functional collaboration</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">What I'm Building</h3>
+          <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+            <li>• AI-powered web applications</li>
+            <li>• Full-stack platforms at scale</li>
+            <li>• Technology for social impact</li>
+            <li>• Open-source contributions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 );
 

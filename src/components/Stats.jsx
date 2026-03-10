@@ -7,7 +7,7 @@ const Stats = () => (
       <div className="text-sm text-black dark:text-white">Years Experience</div>
     </div>
     <div className="text-center">
-      <div className="text-3xl font-bold text-black dark:text-white">20+</div>
+      <div className="text-3xl font-bold text-black dark:text-white">21+</div>
       <div className="text-sm text-black dark:text-white">Solutions Delivered</div>
     </div>
     <div className="text-center">
