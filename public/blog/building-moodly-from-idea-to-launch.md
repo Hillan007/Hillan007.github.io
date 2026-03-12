@@ -24,6 +24,8 @@ The core idea was simple: users log their mood, and Moodly suggests music and we
 - Integrating multiple APIs (Spotify, OpenAI) and handling authentication.
 - Ensuring user privacy and data security.
 - Making the AI recommendations feel personal and accurate.
+- Configuring Spotify API and OpenAI API considering they are reserved for backend and also payment needed.
+
 
 ## Launch & Impact
 Moodly launched in 2025 and quickly gained traction among students and young professionals. Users reported feeling more in control of their moods and discovering new music they loved.
