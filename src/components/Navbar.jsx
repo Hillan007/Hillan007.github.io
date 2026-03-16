@@ -155,6 +155,13 @@ const Navbar = () => {
                   >
                     Open Source
                   </Link>
+                  <Link
+                    to="/extras?tab=testimonials"
+                    onClick={() => setExtrasOpen(false)}
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    Testimonials
+                  </Link>
                 </div>
               )}
             </div>
@@ -273,6 +280,13 @@ const Navbar = () => {
                     className="block px-2 py-1 text-sm text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400"
                   >
                     Open Source
+                  </Link>
+                  <Link
+                    to="/extras?tab=testimonials"
+                    onClick={() => { setIsOpen(false); setMobileExtrasOpen(false); }}
+                    className="block px-2 py-1 text-sm text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400"
+                  >
+                    Testimonials
                   </Link>
                 </div>
               )}

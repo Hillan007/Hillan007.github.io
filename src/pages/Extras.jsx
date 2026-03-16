@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import OpenSource from '../components/OpenSource';
+import Testimonials from '../components/Testimonials';
 
 const Extras = () => {
   const [searchParams] = useSearchParams();
@@ -8,7 +9,7 @@ const Extras = () => {
 
   useEffect(() => {
     const tab = searchParams.get('tab');
-    if (tab === 'opensource' || tab === 'leadership') {
+    if (tab === 'opensource' || tab === 'leadership' || tab === 'testimonials') {
       setActiveTab(tab);
     }
   }, [searchParams]);
@@ -36,6 +37,15 @@ const Extras = () => {
             }`}
         >
           Open Source
+        </button>
+        <button
+          onClick={() => setActiveTab('testimonials')}
+          className={`px-6 py-3 font-medium transition-colors ${activeTab === 'testimonials'
+            ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
+            : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+            }`}
+        >
+          Testimonials
         </button>
       </div>
 
@@ -153,6 +163,10 @@ const Extras = () => {
 
       {activeTab === 'opensource' && (
         <OpenSource />
+      )}
+
+      {activeTab === 'testimonials' && (
+        <Testimonials />
       )}
     </main>
   );

@@ -12,6 +12,7 @@ const Footer = () => (
         <Link to="/about" className="text-sm text-gray-500 underline">About</Link>
         <Link to="/projects" className="text-sm text-gray-500 underline">Projects</Link>
         <Link to="/blog" className="text-sm text-gray-500 underline">Blog</Link>
+        <Link to="/extras?tab=testimonials" className="text-sm text-gray-500 underline">Testimonials</Link>
         <Link to="/contact" className="text-sm text-gray-500 underline">Contact</Link>
         <Link to="/extras" className="text-sm text-gray-500 underline">Extras</Link>
         <Link to="/privacy-policy" className="text-sm text-gray-500 underline">Privacy Policy</Link>
