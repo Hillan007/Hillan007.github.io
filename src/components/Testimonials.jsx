@@ -2,8 +2,8 @@ import React from 'react';
 
 const testimonials = [
   {
-    name: 'Doc',
-    text: 'Victor is a dedicated engineer who truly cares about impact. Our nonprofit site saw a huge boost in engagement!'
+    name: 'Debby SPN-Nigeria',
+    text: 'Victor is a dedicated engineer who truly cares about impact. Our nonprofit site saw a huge boost in engagement'
   },
   {
     name: 'Pastor Kimathi',
