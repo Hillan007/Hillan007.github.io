@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://goldenchamp.vercel.app/sitemap.xml
