@@ -1,0 +1,1 @@
+import{j as e}from"./index-2ed35475.js";const a=["Ethical Tech","Mentorship","Accessibility","Social Good"],l=()=>e.jsx("div",{className:"flex flex-wrap justify-center gap-4 py-4",children:a.map(s=>e.jsx("span",{className:"px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-full text-sm font-medium",children:s},s))});export{l as default};

@@ -1,10 +1,10 @@
-import victorImg from '../assets/images/victor.jpg';
 import { Link } from 'react-router-dom';
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import { motion } from 'framer-motion'
 import { ChevronDown, Download, Mail } from 'lucide-react'
 import AnimatedText from './AnimatedText'
-import ParticleBackground from './ParticleBackground'
+
+const ParticleBackground = lazy(() => import('./ParticleBackground'));
 
 const Hero = () => {
   const containerVariants = {
@@ -31,7 +31,9 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
-      <ParticleBackground />
+      <Suspense fallback={null}>
+        <ParticleBackground />
+      </Suspense>
 
       <div className="container-custom relative z-10">
         <motion.div
@@ -45,11 +47,20 @@ const Hero = () => {
             variants={itemVariants}
             className="flex-shrink-0 flex justify-center md:justify-start mb-6 md:mb-0 md:mr-10"
           >
-            <img
-              src="/Images/me2026.jpg"
-              alt="Victor Muthomi"
-              className="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover object-[center_30%] border-2 border-primary-500 shadow-lg"
-            />
+            <picture>
+              <source srcSet="/Images/me2026.avif" type="image/avif" />
+              <source srcSet="/Images/me2026.webp" type="image/webp" />
+              <img
+                src="/Images/me2026.jpg"
+                alt="Victor Muthomi"
+                width="192"
+                height="192"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                className="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover object-[center_30%] border-2 border-primary-500 shadow-lg"
+              />
+            </picture>
           </motion.div>
 
           {/* Main Content on the right */}

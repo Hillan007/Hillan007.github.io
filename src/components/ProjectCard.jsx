@@ -1,9 +1,23 @@
 import React from 'react';
 
 
-const ProjectCard = ({ title, tech, problem, outcome, image, demo, video, github, note }) => (
+const ProjectCard = ({ title, tech, problem, outcome, image, imageWebp, imageAvif, demo, video, github, note }) => (
   <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6 w-80 flex flex-col items-center">
-    {image && <img src={image} alt={title} className="w-32 h-32 object-cover rounded-full mb-4 border-4 border-blue-400" />}
+    {image && (
+      <picture>
+        {imageAvif && <source srcSet={imageAvif} type="image/avif" />}
+        {imageWebp && <source srcSet={imageWebp} type="image/webp" />}
+        <img
+          src={image}
+          alt={title}
+          loading="lazy"
+          decoding="async"
+          width="128"
+          height="128"
+          className="w-32 h-32 object-cover rounded-full mb-4 border-4 border-blue-400"
+        />
+      </picture>
+    )}
     <h3 className="text-xl font-bold mb-2 text-blue-700 dark:text-blue-300">{title}</h3>
     <p className="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-2">Tech: {tech}</p>
     <p className="mb-2 text-md text-indigo-700 dark:text-indigo-300 font-medium">Problem: {problem}</p>

@@ -1,7 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { Suspense, lazy, useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import OpenSource from '../components/OpenSource';
-import Testimonials from '../components/Testimonials';
+
+const OpenSource = lazy(() => import('../components/OpenSource'));
+const Testimonials = lazy(() => import('../components/Testimonials'));
+
+const TabLoader = () => (
+  <div className="py-8 text-center text-gray-500">Loading tab...</div>
+);
 
 const Extras = () => {
   const [searchParams] = useSearchParams();
@@ -61,6 +66,8 @@ const Extras = () => {
               <img
                 src="/Images/Gents.png"
                 alt="Team Building"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-56 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 group-hover:opacity-100 transition-opacity duration-300">
@@ -78,6 +85,8 @@ const Extras = () => {
               <img
                 src="/Images/leader.jpg"
                 alt="Leadership in Action"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-56 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 group-hover:opacity-100 transition-opacity duration-300">
@@ -95,6 +104,8 @@ const Extras = () => {
               <img
                 src="/Images/BBS.png"
                 alt="Community Impact"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-56 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 group-hover:opacity-100 transition-opacity duration-300">
@@ -112,6 +123,8 @@ const Extras = () => {
               <img
                 src="/Images/Aids day.png"
                 alt="Health Awareness"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-56 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 group-hover:opacity-100 transition-opacity duration-300">
@@ -129,6 +142,8 @@ const Extras = () => {
               <img
                 src="/Images/mental health day.png"
                 alt="Mental Health Support"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-56 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 group-hover:opacity-100 transition-opacity duration-300">
@@ -146,6 +161,8 @@ const Extras = () => {
               <img
                 src="/Images/aids day2.png"
                 alt="Social Responsibility"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-56 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 group-hover:opacity-100 transition-opacity duration-300">
@@ -162,11 +179,15 @@ const Extras = () => {
       )}
 
       {activeTab === 'opensource' && (
-        <OpenSource />
+        <Suspense fallback={<TabLoader />}>
+          <OpenSource />
+        </Suspense>
       )}
 
       {activeTab === 'testimonials' && (
-        <Testimonials />
+        <Suspense fallback={<TabLoader />}>
+          <Testimonials />
+        </Suspense>
       )}
     </main>
   );
