@@ -10,13 +10,13 @@
 
 ## 👨‍💻 About Me
 
-Full-stack software engineer specializing in AI-powered applications and scalable solutions that drive measurable impact. I design and ship production-ready applications across fintech, EdTech, SaaS, and AI domains—leveraging cutting-edge AI models and real-time data processing to solve complex problems.
+Full-stack Software Engineer specializing in AI-powered applications and scalable solutions that drive measurable impact. I design and ship production-ready applications across fintech, EdTech, SaaS, and AI domains—leveraging cutting-edge AI models and real-time data processing to solve complex problems.
 
 **Key Highlights:**
 - 🚀 **21+ production solutions delivered** (including 8+ AI-powered applications)
 - 🤖 **AI/ML Specialist**: Real-time AI integration, prompt engineering, LLM optimization
 - 💻 **5+ technology stacks mastered** (MERN, Real-Time AI, Rapid Prototyping)
-- 🏆 **Open-source contributions** with 2k+ GitHub stars
+
 - 🎯 **Cross-functional expertise** in AI architecture, full-stack development, product strategy
 
 ---
@@ -30,7 +30,7 @@ Full-stack software engineer specializing in AI-powered applications and scalabl
 
 **AI & Machine Learning Specialization**
 - **LLM Integration**: OpenAI GPT, Anthropic Claude, local model deployment
-- **GenAI Applications**: Chatbots, content generation, intelligent assistants, RAG systems
+- **GenAI Applications**: Chatbots, content generation, intelligent assistants
 - **Real-Time AI**: WebSocket integration, live AI interactions, streaming responses
 - **Data Processing**: Vector databases, semantic search, embeddings, RAG pipelines
 - **Optimization**: Prompt engineering, token management, cost optimization, latency reduction
@@ -78,7 +78,7 @@ As an AI specialist, I'm proficient in building intelligent applications that le
 - 🧠 **AI Agents**: Multi-step workflows, autonomous decision-making systems, tool integration
 
 **Notable AI Projects:**
-- Built and deployed 8+ production AI applications serving thousands of users
+- Built and deployed 7+ production AI applications serving thousands of users
 - Implemented RAG pipelines with vector databases for semantic search
 - Optimized LLM APIs reducing token costs by 40% while improving response quality
 - Created real-time AI collaboration features with sub-second latency
