@@ -17,6 +17,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://goldenchamp.vercel.app/blog/god-did</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://goldenchamp.vercel.app/contact</loc>
     <priority>0.7</priority>
   </url>
