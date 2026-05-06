@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import React, { Suspense, lazy } from 'react'
+import React, { Suspense, lazy, useState } from 'react'
 import { motion } from 'framer-motion'
 import { ChevronDown, Download, Mail } from 'lucide-react'
 import AnimatedText from './AnimatedText'
@@ -28,6 +28,8 @@ const Hero = () => {
       }
     }
   }
+
+  const [open, setOpen] = useState(false)
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
@@ -107,15 +109,52 @@ const Hero = () => {
               variants={itemVariants}
               className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center mb-16"
             >
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Link
-                  to="/projects"
+              {/* Primary CTA with simple dropdown */}
+              <div className="relative">
+                <motion.button
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  onClick={() => setOpen(prev => !prev)}
                   className="btn-primary inline-flex items-center gap-2"
                 >
-                  View My Work
-                  <ChevronDown size={20} />
-                </Link>
-              </motion.div>
+                  Hire Me
+                  <ChevronDown size={18} />
+                </motion.button>
+
+                {open && (
+                  <div className="absolute left-0 mt-2 w-56 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-20">
+                    <ul className="py-2">
+                      <li>
+                        <Link
+                          to="/contact?subject=Hire%20Request"
+                          onClick={() => setOpen(false)}
+                          className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700"
+                        >
+                          Hire Me
+                        </Link>
+                      </li>
+                      <li>
+                        <a
+                          href="mailto:victorhillan007@gmail.com?subject=Book%20a%20Call&body=Hi%20Victor%2C%0A%0AI'd%20like%20to%20book%20a%20call%20to%20discuss%20a%20project.%0A%0AThanks%21"
+                          onClick={() => setOpen(false)}
+                          className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700"
+                        >
+                          Book a Call
+                        </a>
+                      </li>
+                      <li>
+                        <Link
+                          to="/projects"
+                          onClick={() => setOpen(false)}
+                          className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700"
+                        >
+                          View Projects
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
 
               {/* CV Request Button - Email */}
               <motion.a
