@@ -40,7 +40,7 @@ Full-stack Software Engineer specializing in AI-powered applications and scalabl
 - Build Tools: Vite, Webpack, ESLint, PostCSS
 - Databases: MongoDB, PostgreSQL, Firebase, Vector DBs (Pinecone, Weaviate)
 - AI Platforms: OpenAI API, Hugging Face, LangChain, Vercel AI SDK
-- Deployment: Vercel, Docker, AWS (including Lambda for AI workloads)
+- Deployment: Vercel, Netlify, AWS (including Lambda for AI workloads)
 
 **Architecture & Practices**
 - Responsive & accessible UI/UX design
