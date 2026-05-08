@@ -1,4 +1,5 @@
 import React, { Suspense, lazy } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -42,6 +43,7 @@ function App() {
           </Suspense>
           <Footer />
           <ScrollToTop />
+          <Analytics />
         </div>
       </Router>
     </ThemeProvider>
