@@ -17,6 +17,6 @@ Here’s what’s different:
 This shift isn’t a loss—it’s clarity. I’m not uninterested in women, just done with the act. I don’t want to chase shadows while I’m busy building something real. I want a connection that fits with my path, a relationship that adds to my growth instead of pulling me away from it. And until that happens, I’m fine walking solo. I’m not really alone anyway—I’m walking with purpose.
 
 To the guys still chasing, 
-I get it. I’ve been there. Maybe you think I’m just burned out or over-thinking things. But maybe you feel it, that quiet nudge toward something more. Toward being more than just someone’s lover. Toward being a leader.
+I get it. Ihave been there. Maybe you think I’m just burned out or over-thinking things. But maybe you feel it, that quiet nudge toward something more. Toward being more than just someone’s lover. Toward being a leader.
 
 Here’s where I’m at: building, coding, mentoring, worshiping. Dreaming about flying and seeing the world from above. I’m not chasing girls anymore.I’m chasing what God has for me. And when love does show up, it won’t be another chase. It’ll feel like coming home.

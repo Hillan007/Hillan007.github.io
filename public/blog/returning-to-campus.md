@@ -1,6 +1,6 @@
 # 🛤️ Returning to Campus: A Heart Full of Growth, A Spirit Ready to Lead
 
-This holiday wasn’t just a break—it was a breakthrough.
+This holiday wasn’t just a break,it was a breakthrough.
 
 As I prepare to return to school next week, I’m carrying more than just books and pens. I’m carrying the weight of a season that stretched me, shaped me, and reminded me why I do what I do.
 

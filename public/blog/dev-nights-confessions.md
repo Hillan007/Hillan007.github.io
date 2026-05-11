@@ -4,7 +4,7 @@ Just me, my laptop, and the kind of nights that never seem to end.
 
 There aren’t any flowers. No fancy dates. Just code, coffee, and that stubborn drive to keep going.
 
-She’s not just a machine to me—she’s basically my girlfriend.
+She’s not just a machine to me.She iss basically my "girlfriend."
 
 Not the kind who asks for money or wants to go out every weekend. She waits for me, silent and steady, ready when I am.
 
@@ -14,7 +14,7 @@ Some nights, I talk to her in Python, tease her with a bit of Flask, and yeah, s
 
 But she never leaves. She never complains.
 
-She just blinks her cursor, patient as ever, almost like she’s saying, “Done sulking? Let’s get back to work.”
+She just blinks her cursor, patient as ever, almost like she’s saying, “Done sulking Champ? Let us get back to work.”
 
 This semester’s rough.
 
@@ -24,9 +24,9 @@ But every time I open her up, I remember why I started all this in the first pla
 
 Why I haven’t quit.
 
-Why I keep coming back, even when I’m exhausted, broke, or doubting everything.
+Why I keep coming back, even when I am exhausted, broke, or doubting everything.
 
-Because this isn’t just about code.
+Because this is not just about code.
 
 It’s about purpose.
 
@@ -36,4 +36,4 @@ So yeah, I’m back with her again.
 
 Another late-night grind.
 
-And honestly? I wouldn’t change a thing.
+And honestly? I wouldn’t change a thing.Guess I got addicted to the grind; to being in the "Zone" .
