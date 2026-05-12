@@ -30,7 +30,9 @@ const SkillsGlobe = () => {
     const rendererRef = useRef(null);
     const globeRef = useRef(null);
     const pointsRef = useRef(null);
+    const glowMeshRef = useRef(null);
     const [hoveredSkill, setHoveredSkill] = useState(null);
+    const [hoveredIndex, setHoveredIndex] = useState(null);
     const { ref, inView } = useInView({
         triggerOnce: true,
         threshold: 0.1
@@ -41,7 +43,6 @@ const SkillsGlobe = () => {
     useEffect(() => {
         if (!inView || !containerRef.current) return;
 
-        // Scene setup
         const width = containerRef.current.clientWidth;
         const height = 500;
         const scene = new THREE.Scene();
@@ -49,96 +50,155 @@ const SkillsGlobe = () => {
 
         // Camera
         const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
-        camera.position.z = 2;
+        camera.position.z = 2.5;
 
         // Renderer
         const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
         renderer.setSize(width, height);
         renderer.setClearColor(0x000000, 1);
+        renderer.shadowMap.enabled = true;
         containerRef.current.appendChild(renderer.domElement);
         rendererRef.current = renderer;
 
-        // Globe geometry
-        const geometry = new THREE.IcosahedronGeometry(1, 32);
-        const material = new THREE.MeshPhongMaterial({
+        // Globe geometry with higher detail
+        const geometry = new THREE.IcosahedronGeometry(1, 48);
+        const material = new THREE.MeshStandardMaterial({
             color: 0x1a1a2e,
             emissive: 0x0a0a1a,
-            wireframe: false,
-            shininess: 10
+            metalness: 0.3,
+            roughness: 0.8,
+            wireframe: false
         });
         const globe = new THREE.Mesh(geometry, material);
+        globe.castShadow = true;
         scene.add(globe);
         globeRef.current = globe;
 
-        // Add some star field
+        // Glow effect around globe
+        const glowGeometry = new THREE.IcosahedronGeometry(1.05, 32);
+        const glowMaterial = new THREE.MeshBasicMaterial({
+            color: 0x0066ff,
+            transparent: true,
+            opacity: 0.1,
+            wireframe: false
+        });
+        const glowMesh = new THREE.Mesh(glowGeometry, glowMaterial);
+        scene.add(glowMesh);
+        glowMeshRef.current = glowMesh;
+
+        // Enhanced star field
         const starsGeometry = new THREE.BufferGeometry();
-        const starsMaterial = new THREE.PointsMaterial({ color: 0xffffff, size: 0.02 });
+        const starsMaterial = new THREE.PointsMaterial({
+            color: 0xffffff,
+            size: 0.03,
+            sizeAttenuation: true,
+            transparent: true,
+            opacity: 0.8
+        });
         const starsVertices = [];
-        for (let i = 0; i < 1000; i++) {
-            const x = (Math.random() - 0.5) * 100;
-            const y = (Math.random() - 0.5) * 100;
-            const z = (Math.random() - 0.5) * 100;
+        for (let i = 0; i < 2000; i++) {
+            const x = (Math.random() - 0.5) * 200;
+            const y = (Math.random() - 0.5) * 200;
+            const z = (Math.random() - 0.5) * 200;
             starsVertices.push(x, y, z);
         }
         starsGeometry.setAttribute('position', new THREE.BufferAttribute(new Float32Array(starsVertices), 3));
         const stars = new THREE.Points(starsGeometry, starsMaterial);
         scene.add(stars);
 
-        // Lighting
-        const light1 = new THREE.DirectionalLight(0xffffff, 1);
-        light1.position.set(5, 3, 5);
+        // Advanced lighting
+        const light1 = new THREE.DirectionalLight(0xffffff, 0.8);
+        light1.position.set(10, 5, 5);
+        light1.castShadow = true;
         scene.add(light1);
 
-        const light2 = new THREE.DirectionalLight(0x4488ff, 0.5);
-        light2.position.set(-5, -3, -5);
+        const light2 = new THREE.DirectionalLight(0x4488ff, 0.6);
+        light2.position.set(-10, -5, -5);
         scene.add(light2);
 
-        const ambientLight = new THREE.AmbientLight(0x333357, 0.8);
+        const ambientLight = new THREE.AmbientLight(0x333357, 0.6);
         scene.add(ambientLight);
 
-        // Add skill points
-        const pointsGeometry = new THREE.BufferGeometry();
-        const pointsMaterial = new THREE.PointsMaterial({
-            size: 0.08,
-            sizeAttenuation: true
-        });
+        // Add skill points with animation
+        const skillMeshes = [];
+        const skillSphereGeometry = new THREE.SphereGeometry(0.05, 16, 16);
 
-        const positions = [];
-        const colors = [];
-        skills.forEach(skill => {
+        skills.forEach((skill, index) => {
             const lat = (skill.lat * Math.PI) / 180;
             const lng = (skill.lng * Math.PI) / 180;
             const x = Math.cos(lat) * Math.cos(lng);
             const y = Math.sin(lat);
             const z = Math.cos(lat) * Math.sin(lng);
-            positions.push(x * 1.1, y * 1.1, z * 1.1);
-            const color = new THREE.Color(skill.color);
-            colors.push(color.r, color.g, color.b);
+
+            // Main sphere
+            const material = new THREE.MeshStandardMaterial({
+                color: skill.color,
+                emissive: skill.color,
+                emissiveIntensity: 0.6,
+                metalness: 0.8,
+                roughness: 0.2
+            });
+            const sphere = new THREE.Mesh(skillSphereGeometry, material);
+            sphere.position.set(x * 1.15, y * 1.15, z * 1.15);
+            sphere.castShadow = true;
+            scene.add(sphere);
+
+            // Glow ring around sphere
+            const ringGeometry = new THREE.TorusGeometry(0.08, 0.01, 8, 100);
+            const ringMaterial = new THREE.MeshBasicMaterial({
+                color: skill.color,
+                transparent: true,
+                opacity: 0.6
+            });
+            const ring = new THREE.Mesh(ringGeometry, ringMaterial);
+            ring.position.copy(sphere.position);
+            ring.rotation.x = Math.random() * Math.PI;
+            ring.rotation.y = Math.random() * Math.PI;
+            scene.add(ring);
+
+            skillMeshes.push({
+                sphere,
+                ring,
+                originalScale: 1,
+                index,
+                pulsePhase: Math.random() * Math.PI * 2
+            });
         });
 
-        pointsGeometry.setAttribute('position', new THREE.BufferAttribute(new Float32Array(positions), 3));
-        pointsGeometry.setAttribute('color', new THREE.BufferAttribute(new Float32Array(colors), 3));
-
-        const pointsMat = new THREE.PointsMaterial({
-            size: 0.12,
-            vertexColors: true,
-            sizeAttenuation: true
-        });
-
-        const points = new THREE.Points(pointsGeometry, pointsMat);
-        scene.add(points);
-        pointsRef.current = points;
-
-        // Animation loop
+        // Animation loop with smooth rotation and pulsing points
         let animationId;
+        let rotationSpeed = 0.0002;
+        let time = 0;
+
         const animate = () => {
             animationId = requestAnimationFrame(animate);
-            globe.rotation.y += 0.0003;
+            time += 0.016;
+
+            // Smooth rotation
+            globe.rotation.y += rotationSpeed;
+            glowMesh.rotation.y -= rotationSpeed * 0.5;
+
+            // Gentle bobbing of glow
+            glowMesh.material.opacity = 0.1 + Math.sin(Date.now() * 0.0005) * 0.05;
+
+            // Animate skill spheres with pulsing and rotation
+            skillMeshes.forEach((skillMesh, i) => {
+                // Pulse effect
+                const pulse = 1 + Math.sin(time * 2 + skillMesh.pulsePhase) * 0.3;
+                skillMesh.sphere.scale.set(pulse, pulse, pulse);
+                skillMesh.sphere.material.emissiveIntensity = 0.4 + Math.sin(time * 1.5 + skillMesh.pulsePhase) * 0.3;
+
+                // Ring rotation
+                skillMesh.ring.rotation.x += 0.003;
+                skillMesh.ring.rotation.y += 0.005;
+                skillMesh.ring.material.opacity = 0.4 + Math.sin(time * 1.8 + skillMesh.pulsePhase) * 0.3;
+            });
+
             renderer.render(scene, camera);
         };
         animate();
 
-        // Mouse picking
+        // Mouse interaction
         const raycaster = new THREE.Raycaster();
         const mouse = new THREE.Vector2();
 
@@ -148,14 +208,23 @@ const SkillsGlobe = () => {
             mouse.y = -((event.clientY - rect.top) / height) * 2 + 1;
 
             raycaster.setFromCamera(mouse, camera);
-            const intersects = raycaster.intersectObject(points);
+
+            // Check intersection with skill spheres
+            const spheres = skillMeshes.map(sm => sm.sphere);
+            const intersects = raycaster.intersectObjects(spheres);
 
             if (intersects.length > 0) {
-                const point = intersects[0];
-                const index = point.index;
-                setHoveredSkill(skills[index]);
+                const sphere = intersects[0].object;
+                const skillMesh = skillMeshes.find(sm => sm.sphere === sphere);
+                if (skillMesh) {
+                    setHoveredSkill(skills[skillMesh.index]);
+                    setHoveredIndex(skillMesh.index);
+                    rotationSpeed = 0.0001;
+                }
             } else {
                 setHoveredSkill(null);
+                setHoveredIndex(null);
+                rotationSpeed = 0.0002;
             }
         };
 
@@ -182,9 +251,14 @@ const SkillsGlobe = () => {
             renderer.dispose();
             geometry.dispose();
             material.dispose();
-            pointsGeometry.dispose();
+            skillSphereGeometry.dispose();
+            starsGeometry.dispose();
+            skillMeshes.forEach(sm => {
+                sm.sphere.material.dispose();
+                sm.ring.material.dispose();
+            });
         };
-    }, [inView]);
+    }, [inView, skills]);
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -220,7 +294,7 @@ const SkillsGlobe = () => {
                             Interactive <span className="text-gradient">Tech Stack</span>
                         </h2>
                         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                            Explore my skills on an interactive globe - hover over points to see details
+                            Explore my skills on an interactive 3D globe - hover over points to see details
                         </p>
                     </div>
 
