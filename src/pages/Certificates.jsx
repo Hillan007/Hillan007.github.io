@@ -64,6 +64,51 @@ const sampleCertificates = [
         tags: ['Generative AI', 'Generative AI Tools', 'Artificial Intelligence'],
 
     },
+    {
+        id: 8,
+        title: 'Introduction to Cybersecurity',
+        issuer: 'Cisco Networking Academy',
+        date: '2025-10',
+        image: '/certs/Intro_CyberSecurity.pdf',
+        tags: ['Cybersecurity Fundamentals', 'Security Awareness', 'Cisco Networking Academy'],
+
+    },
+    {
+        id: 9,
+        title: 'Cybersecurity Awareness and Terminology',
+        issuer: 'Cisco Networking Academy',
+        date: '2025-10',
+        image: '/certs/Cybersecurity_Awareness_Cybersecurity_Terminology.pdf',
+        tags: ['Cybersecurity', 'Security Terminology', 'Risk Awareness'],
+
+    },
+    {
+        id: 10,
+        title: 'Exploring Networking with Cisco Packet Tracer',
+        issuer: 'Cisco Networking Academy',
+        date: '2025-11',
+        image: '/certs/Exploring_Networking_with_Cisco_Packet_Tracer_certificate_hillanvictor59-gmail-com_8155eaa0-8273-4a11-b21b-690ee7dd4690.pdf',
+        tags: ['Networking', 'Packet Tracer', 'Cisco Networking Academy'],
+
+    },
+    {
+        id: 11,
+        title: 'Packet Tracer Certificate',
+        issuer: 'Cisco Networking Academy',
+        date: '2025-11',
+        image: '/certs/packet_tracer_Certificate.pdf',
+        tags: ['Networking', 'Packet Tracer', 'Hands-on Labs'],
+
+    },
+    {
+        id: 12,
+        title: 'Exploring IoT with Cisco Packet Tracer',
+        issuer: 'Cisco Networking Academy',
+        date: '2025-11',
+        image: '/certs/Exploring_IoT_with_Cisco_Packet_Tracer_certificate_hillanvictor59-gmail-com_fd56f936-3270-4f32-8259-48747c440c9f.pdf',
+        tags: ['Networking', 'IoT', 'Cisco Networking Academy'],
+
+    },
     // ...add your certificates here
 ];
 
