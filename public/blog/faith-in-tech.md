@@ -25,7 +25,7 @@ I’ve seen God show up in unexpected ways — like when I couldn’t afford a t
 So whether I’m pushing to GitHub or pushing through doubt, I know I’m not coding alone.
 
 💬 Final Thoughts
-Faith doesn’t make me perfect — it makes me purposeful. And in a world of algorithms and APIs, I’m learning to listen to the still, small voice that says:
+Faith doesn’t make me perfect ,it makes me purposeful. And in a world of algorithms and APIs, I’m learning to listen to the still, small voice that says:
 “Keep building. Keep believing. I’m with you.”
 
 
