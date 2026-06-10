@@ -1,16 +1,16 @@
 ✨ Coding with Conviction: How Faith Shapes My Tech Journey
 🛠️ The Code Behind the Calling
-When I first started learning to code, it wasn’t just about building apps — it was about building impact. As a believer, I’ve always seen technology as a tool to serve, uplift, and connect. Whether I’m debugging a Flask app or designing church media, I’m reminded of 
+When I first started learning to code, it wasn’t just about building apps — it was about building impact. As a believer, I have always seen technology as a tool to serve, uplift, and connect. Whether I’m debugging a Flask app or designing church media, I’m reminded of 
 #Colossians 3:23:
 “Whatever you do, work at it with all your heart, as working for the Lord, not for human masters.”
 
-This verse isn’t just a motto — it’s my workflow. It pushes me to write clean code, mentor others, and stay humble even when the deployment fails (again).
+This verse isn’t just a motto ;it’s my workflow. It pushes me to write clean code, mentor others, and stay humble even when the deployment fails (again).
 
 📖 Scripture as a Source of Strategy
-Faith doesn’t just guide my ethics — it shapes my learning. When I hit a wall in a project, I turn to verses like:
-- Proverbs 3:5–6 – “Trust in the Lord with all your heart and lean not on your own understanding…”
+Faith does not just guide my ethics ; it shapes my learning. When I hit a wall in a project, I turn to verses like:
+- Proverbs 3:5–6 –-- “Trust in the Lord with all your heart and lean not on your own understanding…”
 This reminds me that growth isn’t always linear. Sometimes the detour teaches more than the destination.
-- #James 1:5 – “If any of you lacks wisdom, let him ask of God…”
+- #James 1:5 –-- “If any of you lacks wisdom, let him ask of God…”
 Whether I’m choosing a tech stack or navigating client expectations, I’ve learned to pray before I plan.
 
 🌍 Building for More Than Myself
@@ -26,7 +26,7 @@ So whether I’m pushing to GitHub or pushing through doubt, I know I’m not co
 
 💬 Final Thoughts
 Faith doesn’t make me perfect ,it makes me purposeful. And in a world of algorithms and APIs, I’m learning to listen to the still, small voice that says:
-“Keep building. Keep believing. I’m with you.”
+“Keep building. Keep believing. I am with you.”
 
 
 
