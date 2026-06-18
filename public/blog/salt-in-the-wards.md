@@ -12,6 +12,6 @@ In Bible Study, we usually talk a lot about being the salt and light. I thought 
 
 I watched as people’s faces soften. Some held back tears. I could see God moving,not with big, flashy miracles, but in small ways. A held hand. A whispered prayer. A word that let someone know they are not alone.
 
-Health truly is a gift, but so is the chance to serve while we’ve got it. Today made me realize that our strength isn’t just for us. We are meant to use it for others. Faith isn’t something you store up on a shelf. It’s something you pour out, right where you are.
+Health truly is a gift, but so is the chance to serve while we’ve got it. Today made me realize that our strength is not just for us. We are meant to use it for others. Faith isn’t something you store up on a shelf. It is something you pour out, right where you are.
 
-If you’re reading this, don’t hang back waiting for the perfect moment. The world needs your light now.Go shine your light for the Lord's sake. There are people hurting who need what you have got. So step out. Say something. Show up. Be there.
+If you are reading this, don’t hang back waiting for the perfect moment. The world needs your light now.Go shine your light for the Lord's sake. There are people hurting who need what you have got. So step out. Say something. Show up. Be there.

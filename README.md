@@ -52,7 +52,7 @@ Full-stack Software Engineer specializing in AI-powered applications and scalabl
 
 ---
 
-## 📁 Portfolio Overview
+##  Portfolio Overview
 
 This portfolio showcases:
 
@@ -66,16 +66,16 @@ This portfolio showcases:
 
 ---
 
-## 🤖 AI & Innovation Focus
+##  AI & Innovation Focus
 
 As an AI specialist, I'm proficient in building intelligent applications that leverage modern AI models:
 
 **What I Build:**
-- 🦾 **Intelligent Systems**: AI-powered chatbots, search engines, content generators, and automation tools
-- 📊 **Data-Driven Applications**: Real-time analytics, predictive models, personalization engines
-- 🔗 **RAG Systems**: Retrieval-Augmented Generation for knowledge-enhanced AI responses
-- ⚡ **Real-Time AI**: WebSocket-based AI interactions, streaming responses, live collaboration tools
-- 🧠 **AI Agents**: Multi-step workflows, autonomous decision-making systems, tool integration
+-  **Intelligent Systems**: AI-powered chatbots, search engines, content generators, and automation tools
+-  **Data-Driven Applications**: Real-time analytics, predictive models, personalization engines
+-  **RAG Systems**: Retrieval-Augmented Generation for knowledge-enhanced AI responses
+-  **Real-Time AI**: WebSocket-based AI interactions, streaming responses, live collaboration tools
+-  **AI Agents**: Multi-step workflows, autonomous decision-making systems, tool integration
 
 **Notable AI Projects:**
 - Built and deployed 7+ production AI applications serving thousands of users
@@ -86,13 +86,13 @@ As an AI specialist, I'm proficient in building intelligent applications that le
 
 ---
 
-## 🎨 Features & Design
+##  Features & Design
 
 **User Experience**
-- ✨ Modern, responsive interface with dark/light modes
-- 🎯 Optimized for desktop, tablet, and mobile devices
-- ⚡ Fast load times and smooth animations
-- ♿ Accessibility-first design approach
+-  Modern, responsive interface with dark/light modes
+-  Optimized for desktop, tablet, and mobile devices
+-  Fast load times and smooth animations
+-  Accessibility-first design approach
 
 **Technology Stack**
 - **Frontend**: React 18, Tailwind CSS, Framer Motion, Lucide Icons
@@ -103,7 +103,7 @@ As an AI specialist, I'm proficient in building intelligent applications that le
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 **Prerequisites**: Node.js 16+, npm/yarn
 
@@ -128,7 +128,7 @@ npm run preview
 
 ---
 
-## 📊 Performance & Quality
+##  Performance & Quality
 
 - **Lighthouse Scores**: 90+ across performance, accessibility, best practices
 - **Responsive Design**: Mobile-first approach, tested on all major devices
@@ -153,14 +153,14 @@ I'm always interested in discussing:
 - AI optimization and cost efficiency
 
 **Reach out:**
-- 📧 **Email**: [victorhillan007@gmail.com](mailto:victorhillan007@gmail.com)
-- 💼 **LinkedIn**: [victor-muthomi-1a57b8305](https://www.linkedin.com/in/victor-muthomi-1a57b8305)
-- 💻 **GitHub**: [Hillan007](https://github.com/Hillan007)
-- 𝕏 **Twitter**: [@victorhillan007](https://x.com/victorhillan007)
+-  **Email**: [victorhillan007@gmail.com](mailto:victorhillan007@gmail.com)
+-  **LinkedIn**: [victor-muthomi-1a57b8305](https://www.linkedin.com/in/victor-muthomi-1a57b8305)
+-  **GitHub**: [Hillan007](https://github.com/Hillan007)
+- 𝕏**Twitter**: [@victorhillan007](https://x.com/victorhillan007)
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
