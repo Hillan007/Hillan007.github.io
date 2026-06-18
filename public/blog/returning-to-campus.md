@@ -4,7 +4,7 @@ This holiday was not just a break,it was a breakthrough.
 
 As I prepare to return to school next week, I am carrying more than just books and pens. I am carrying the weight of a season that stretched me, shaped me, and reminded me why I do what I do.
 
-I dove deep into coding ;refining my backend skills, optimizing SEO, and building real-world solutions. One of the highlights was working with Sexual Purity, a client whose mission aligns with my values. I helped shape their backend infrastructure, and in doing so, I saw how tech can serve truth.
+I dived deep into coding ;refining my backend skills, optimizing SEO, and building real-world solutions. One of the highlights was working with Sexual Purity, a client in Nigeria whose mission aligns with my values. I helped shape their backend infrastructure, and in doing so, I saw how tech can serve truth.
 
 But it was not just about code. I served in church media, designing stunning posters and live wallpapers that lit up our worship space. Even our pastor took notice ; and that moment reminded me that creativity, when rooted in purpose, speaks louder than words.
 
