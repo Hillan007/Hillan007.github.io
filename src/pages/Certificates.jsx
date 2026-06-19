@@ -109,6 +109,15 @@ const sampleCertificates = [
         tags: ['Networking', 'IoT', 'Cisco Networking Academy'],
 
     },
+    {
+        id: 13,
+        title: 'Networking Devices and Initial Configuration',
+        issuer: 'Cisco Networking Academy',
+        date: '2025-11',
+        image: '/certs/Networking_Devices_and_Initial_Configuration_certificate.pdf',
+        tags: ['Networking', 'Device Configuration', 'Cisco Networking Academy'],
+
+    },
     // ...add your certificates here
 ];
 
