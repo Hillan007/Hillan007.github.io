@@ -1,5 +1,13 @@
 export const BLOG_POSTS = [
     {
+        title: 'God Did',
+        excerpt: 'A testimony of how service, leadership, provision, and career alignment unfolded through God’s timing.',
+        slug: 'god-did',
+        date: '2026-05-06',
+        category: 'Faith',
+        tags: ['Faith', 'Leadership', 'Testimony'],
+    },
+    {
         title: 'Flask Deployment for Beginners',
         excerpt: 'A step-by-step guide to getting your Flask app live on the web, with tips for Vercel and Heroku.',
         slug: 'flask-deployment-for-beginners',

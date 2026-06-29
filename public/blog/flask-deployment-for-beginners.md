@@ -1,6 +1,6 @@
 
 🚀 Flask Deployment for Beginners: From Local to Live with Moodly
-Deploying your first Flask app can feel like stepping into the unknown—but trust me, it’s one of the most rewarding leaps you’ll take as a developer. Whether you're building a portfolio project, a passion app, or something like Moodly, this guide will walk you through the essentials of getting your Flask app online. Lets do this
+Deploying your first Flask app can feel like stepping into the unknown—but trust me, it is one of the most rewarding leaps you’ll take as a developer. Whether you are building a portfolio project, a passion app, or something like Moodly, this guide will walk you through the essentials of getting your Flask app online. Lets do this
 
 🌍 Why Deploy Flask?
 Before we dive into the how, let’s talk about the why:
@@ -42,8 +42,8 @@ Deploying Moodly taught me how to manage environment variables, debug deployment
 💡 Pro Tip: Always test your app in a clean virtual environment and simulate serverless behavior locally (e.g., using vercel dev) before deploying. It’ll save you hours of debugging!
 
 💡 Final Tips
-- 📚 Read the platform docs—they’re your best friend
+- 📚 Read the platform docs—they are your best friend
 - 🧼 Start simple, then optimize
-- 🎉 Celebrate your first deploy—it’s a big milestone!
+- 🎉 Celebrate your first deploy—it is a big milestone!
 
-Whether you’re building something fun like Moodly or launching a nonprofit tool, deployment is your bridge from idea to impact. Keep learning, keep shipping, and keep sharing your journey.
+Whether you are building something fun like Moodly or launching a nonprofit tool, deployment is your bridge from idea to impact. Keep learning, keep shipping, and keep sharing your journey.

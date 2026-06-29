@@ -32,7 +32,7 @@ Moodly launched in 2025 and quickly gained traction among students and young pro
 
 ## Lessons Learned
 - Start simple, then iterate based on feedback.
-- User privacy is critical—always prioritize it.
+- User privacy is critical,always prioritize it.
 - AI can enhance user experience, but human-centered design is key.
 
 ---

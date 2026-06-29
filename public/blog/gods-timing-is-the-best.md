@@ -2,7 +2,7 @@ Last December, I walked through one of the most humbling seasons of my life.
 
 I was serving as a leader in different sectors — from clubs to societies on campus. On the outside, everything looked stable. Leadership. Influence. Responsibility. But behind the scenes, I was struggling.
 
-I didn't even own a smartphone.
+I did not even own a smartphone.
 
 In a generation where leadership is often equated with visibility, online presence, and constant digital engagement, I was using a button phone. No WhatsApp groups buzzing in my hand. No quick texts. No social media updates. Just calls.
 

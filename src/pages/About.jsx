@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import AboutSection from '../components/AboutSection';
+import SkillsGlobe from '../components/SkillsGlobe';
 
 const TechStack = lazy(() => import('../components/TechStack'));
 const Values = lazy(() => import('../components/Values'));
@@ -14,6 +15,7 @@ const About = () => {
   return (
     <main>
       <AboutSection />
+      <SkillsGlobe />
       <Suspense fallback={<SectionLoader />}>
         <TechStack />
       </Suspense>
