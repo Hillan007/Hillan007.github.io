@@ -61,12 +61,21 @@ const projects = [
 
 const Projects = () => {
   return (
-    <main>
-      <h2 className="text-3xl font-bold text-center my-8">Featured Projects</h2>
-      <div className="flex flex-wrap justify-center gap-8">
-        {projects.map((proj, idx) => (
-          <ProjectCard key={idx} {...proj} />
-        ))}
+    <main className="section-padding">
+      <div className="container-custom">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            Featured <span className="text-gradient">Projects</span>
+          </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            Real-world solutions I've built — from AI-powered apps to community platforms.
+          </p>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
+          {projects.map((proj, idx) => (
+            <ProjectCard key={idx} {...proj} />
+          ))}
+        </div>
       </div>
     </main>
   );
