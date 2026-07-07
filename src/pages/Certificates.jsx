@@ -118,6 +118,15 @@ const sampleCertificates = [
         tags: ['Networking', 'Device Configuration', 'Cisco Networking Academy'],
 
     },
+    {
+        id: 14,
+        title: 'Python Essentials 1',
+        issuer: 'Cisco Networking Academy',
+        date: '2025-11',
+        image: '/certs/python essentials 1.pdf',
+        tags: ['Python', 'Programming Fundamentals', 'Cisco Networking Academy'],
+
+    },
     // ...add your certificates here
 ];
 
