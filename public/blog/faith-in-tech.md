@@ -4,7 +4,7 @@ When I first started learning to code, it wasn’t just about building apps — 
 #Colossians 3:23:
 “Whatever you do, work at it with all your heart, as working for the Lord, not for human masters.”
 
-This verse isn’t just a motto ;it’s my workflow. It pushes me to write clean code, mentor others, and stay humble even when the deployment fails (again).
+This verse is not just a motto ;it’s my workflow. It pushes me to write clean code, mentor others, and stay humble even when the deployment fails (again).
 
 📖 Scripture as a Source of Strategy
 Faith does not just guide my ethics ; it shapes my learning. When I hit a wall in a project, I turn to verses like:
