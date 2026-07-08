@@ -8,4 +8,4 @@ Even in my professional path, He aligned things perfectly. I secured an attachme
 
 Looking back, I see a clear thread: service, leadership, provision, enjoyment, and career—all aligned by God’s hand.
 
-And so I close with this encouragement: To anyone out there who may be doubting, I urge you to keep trusting in Him. At the right time, He will make it happen. You may not see how the pieces will align, but God’s timing is always perfect.
+And so I close with this encouragement: To anyone out there who may be doubting, I urge you to keep trusting in Him. At the right time, He will make it happen. You may not see how the pieces will pierce together, but God’s timing is always perfect.
