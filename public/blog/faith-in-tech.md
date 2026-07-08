@@ -21,11 +21,11 @@ My projects — from Moodly to nonprofit sites — are rooted in purpose. I want
 I believe that every line of code can be an act of service. And every bug fixed is a reminder that grace meets us in the mess.
 
 🙌 When Tech Meets Testimony
-I’ve seen God show up in unexpected ways — like when I couldn’t afford a tool but found a free workaround, or when a blog post I almost didn’t publish ended up encouraging someone else. These moments remind me that my journey isn’t just technical. It’s spiritual.
+I have seen God show up in unexpected ways — like when I could not afford a tool but found a free workaround, or when a blog post I almost didn’t publish ended up encouraging someone else. These moments remind me that my journey isn’t just technical. It’s spiritual.
 So whether I’m pushing to GitHub or pushing through doubt, I know I’m not coding alone.
 
 💬 Final Thoughts
-Faith doesn’t make me perfect ,it makes me purposeful. And in a world of algorithms and APIs, I’m learning to listen to the still, small voice that says:
+Faith does nott make me perfect ,it makes me purposeful. And in a world of algorithms and APIs, I am learning to listen to the still, small voice that says:
 “Keep building. Keep believing. I am with you.”
 
 
