@@ -37,7 +37,7 @@ const AnimatedText = () => {
   }, [displayText, isDeleting, currentRole, roles])
 
   return (
-    <div className="h-16 flex items-center justify-center">
+    <div className="h-16 flex items-center justify-center md:justify-start">
       <motion.h2 
         className="text-2xl md:text-4xl font-semibold text-primary-600 dark:text-primary-400"
         key={displayText}
