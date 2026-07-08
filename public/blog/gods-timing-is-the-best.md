@@ -18,7 +18,7 @@ But somewhere in that season, God showed me something that changed my perspectiv
 
 **It was about the vessel.**
 
-Leadership was not flowing from my phone. It wasn't powered by apps, data bundles, or digital platforms. It was flowing through me. I was simply the vessel being used.
+Leadership was not flowing from my phone. It was not powered by apps, data bundles, or digital platforms. It was flowing through me. I was simply the vessel being used.
 
 And then I remembered the words in Matthew 25:21:
 
